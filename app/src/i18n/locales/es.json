@@ -1,0 +1,913 @@
+{
+  "common": {
+    "serviceName": "Diagnóstico de Preparación para el Desarrollo Impulsado por IA",
+    "headerHistory": "Historial",
+    "headerAbout": "Acerca del diagnóstico",
+    "footerPrivacy": "Sus respuestas y los resultados del diagnóstico se procesan localmente en el navegador de este dispositivo. No se envían a ningún servidor ni servicio externo.",
+    "footerAbout": "Acerca del diagnóstico",
+    "tierQuick": "Diagnóstico rápido",
+    "tierStandard": "Diagnóstico estándar",
+    "questionCountUnit": "{{count}} preguntas",
+    "percentRange": "{{min}}-{{max}}%",
+    "percentSingle": "{{value}}%",
+    "diffPointsPositive": "+{{diff}} puntos desde la última vez",
+    "diffPointsNegative": "{{diff}} puntos desde la última vez",
+    "loading": "Cargando…",
+    "languageSwitcherLabel": "Seleccionar idioma",
+    "questionCountUnit_one": "{{count}} pregunta",
+    "questionCountUnit_other": "{{count}} preguntas"
+  },
+  "languages": {
+    "ja": "日本語",
+    "en": "English",
+    "zh-CN": "简体中文",
+    "ko": "한국어",
+    "es": "Español"
+  },
+  "scoreBand": {
+    "band1": "Empezando por sentar las bases",
+    "band2": "Etapa de consolidar la base para la mejora",
+    "band3": "Etapa de ampliar la práctica",
+    "band4": "Etapa de acelerar el uso de la IA",
+    "band5": "Etapa de avanzar hacia un uso organizativo"
+  },
+  "home": {
+    "heroBadge": "AI DEVELOPMENT READINESS",
+    "heroTitle": "¿Está su equipo preparado para adoptar la IA?",
+    "heroSubtitle": "Visualice sus procesos de desarrollo, la gestión del equipo y la gobernanza. Un diagnóstico práctico para llevar el uso de la IA al siguiente nivel.",
+    "heroCtaPrimary": "Comenzar el diagnóstico gratis",
+    "heroCtaSecondary": "Conocer más sobre el diagnóstico",
+    "heroBadgeTime": "Desde 2 minutos",
+    "heroBadgeNoSignup": "Sin registro",
+    "outcomesEyebrow": "WHAT YOU GET",
+    "outcomesTitle": "Lo que obtendrá con el diagnóstico",
+    "outcomesSubtitle": "Organizamos el a menudo ambiguo concepto de «madurez en el uso de la IA» de una forma que conduce a acciones concretas.",
+    "outcome1": "Comparta con su equipo una visión común de dónde se encuentra en el uso de la IA",
+    "outcome2": "Identifique con claridad qué procesos de desarrollo debe consolidar a continuación",
+    "outcome3": "Obtenga acciones de mejora fáciles de poner en práctica",
+    "flowEyebrow": "HOW IT WORKS",
+    "flowTitle": "En 3 pasos, hacia su próximo movimiento",
+    "flowLinkText": "Ver los cursos de diagnóstico",
+    "step1Title": "Responda las preguntas",
+    "step1Body": "Elija el curso de diagnóstico adecuado para la situación actual de su equipo y responda las preguntas.",
+    "step2Title": "Conozca su situación actual",
+    "step2Body": "Visualice de forma integral sus procesos de desarrollo, la gobernanza y la base para el uso de la IA.",
+    "step3Title": "Decida su próximo paso",
+    "step3Body": "Establezca las prioridades de mejora a partir de la puntuación y las acciones recomendadas.",
+    "ctaTitle": "Empiece por conocer dónde se encuentra ahora.",
+    "ctaSubtitle": "Los resultados se guardan en el navegador y podrá consultarlos más adelante.",
+    "ctaButton": "Comenzar el diagnóstico",
+    "heroImageAlt": "Un equipo de desarrollo que utiliza IA"
+  },
+  "assessmentSelect": {
+    "eyebrow": "ASSESSMENT",
+    "title": "Elija un curso de diagnóstico",
+    "subtitle": "Elija entre dos cursos según la situación de su equipo. En ambos casos, los resultados le ayudarán a definir los próximos pasos a seguir.",
+    "resumeTitle": "Puede continuar con el diagnóstico anterior",
+    "resumeBody": "Sus respuestas parciales están guardadas en este navegador.",
+    "resumeButton": "Reanudar donde lo dejó",
+    "restartButton": "Empezar de nuevo",
+    "quickTitle": "Diagnóstico rápido",
+    "quickTime": "Desde 2 minutos",
+    "quickQuestions": "12 preguntas",
+    "quickDescription": "Ideal para equipos que quieren conocer rápidamente su situación actual. Revisa de forma compacta los fundamentos del desarrollo y el uso de la IA.",
+    "quickFeature1": "Conozca la situación actual de sus procesos",
+    "quickFeature2": "Identifique las prioridades de mejora",
+    "quickFeature3": "Comience sin necesidad de registrarse",
+    "standardTitle": "Diagnóstico estándar",
+    "standardTime": "Unos 5 minutos",
+    "standardQuestions": "26 preguntas",
+    "standardDescription": "Para equipos que desean identificar con más detalle sus fortalezas y desafíos. Obtendrá recomendaciones detalladas y prácticas.",
+    "standardFeature1": "Evalúe 5 áreas de forma integral",
+    "standardFeature2": "Sugerencias de mejora más detalladas",
+    "standardFeature3": "Guarde los resultados en el historial",
+    "startCourseButton": "Comenzar {{title}}",
+    "footerSaved": "Los resultados se guardan en el navegador",
+    "footerConversation": "Una buena forma de iniciar la conversación en equipo",
+    "footerLink": "Ver el enfoque del diagnóstico"
+  },
+  "assessment": {
+    "eyebrowQuick": "QUICK ASSESSMENT",
+    "eyebrowStandard": "STANDARD ASSESSMENT",
+    "questionCounter": "Pregunta {{current}} / {{total}}",
+    "noStorageWarning": "Este entorno no permite guardar las respuestas parciales ni el historial. No cierre esta pantalla mientras responde.",
+    "prevButton": "Anterior",
+    "nextButton": "Siguiente",
+    "finishButton": "Ver el resultado del diagnóstico",
+    "autoSaveNotice": "Sus respuestas se guardan automáticamente en el navegador",
+    "cancelButton": "Cancelar el diagnóstico",
+    "keyboardHint": "También puede seleccionar con las teclas del 1 al 5."
+  },
+  "questionCard": {
+    "categoryScored": "Evaluación de madurez del desarrollo",
+    "categoryProfile": "Perfil del equipo"
+  },
+  "result": {
+    "loading": "Cargando el resultado del diagnóstico…",
+    "emptyTitle": "No se encontró ningún resultado de diagnóstico",
+    "emptyBody": "Al completar el diagnóstico, aquí se mostrará la situación actual de su equipo y las próximas acciones a seguir.",
+    "emptyButton": "Comenzar el diagnóstico",
+    "eyebrow": "ASSESSMENT RESULT",
+    "title": "Resultado del diagnóstico",
+    "subtitle": "Conocer su situación actual facilita elegir el próximo paso. Comience por las mejoras de mayor prioridad.",
+    "outdatedBadge": "Resultado de una versión anterior",
+    "totalScoreLabel": "Diagnóstico de IA: Puntuación total",
+    "levelLabel": "Nivel {{level}}",
+    "reductionLabel": "Margen de mejora de la productividad de desarrollo mediante el uso de la IA",
+    "guidanceAlert": "Este resultado es una referencia para que su equipo defina las prioridades de mejora. Considérelo junto con la situación real de desarrollo y elija un próximo paso razonable.",
+    "planningPhaseWarning": "Dado que se encuentra en la etapa de planificación, este diagnóstico es solo orientativo. Le recomendamos repetirlo una vez que el enfoque de desarrollo esté definido.",
+    "scoreBreakdownEyebrow": "SCORE BREAKDOWN",
+    "scoreBreakdownTitle": "Puntuación por área",
+    "unknownAlert": "Hay preguntas que quedaron sin responder. Para obtener un resultado más preciso, verifique la situación con su equipo y vuelva a realizar el diagnóstico.",
+    "nextActionEyebrow": "NEXT ACTION",
+    "nextActionTitle": "Lleve el resultado a la próxima conversación de su equipo.",
+    "nextActionSubtitle": "Compártalo y comience por las acciones de mayor prioridad.",
+    "repeatButton": "Repetir el diagnóstico con las mismas respuestas",
+    "newButton": "Realizar un nuevo diagnóstico",
+    "historyButton": "Ver el historial",
+    "answersButton": "Ver la lista de respuestas"
+  },
+  "resultSections": {
+    "priority": {
+      "high": "Alta",
+      "medium": "Media",
+      "low": "Baja"
+    },
+    "priorityActionsEyebrow": "PRIORITY ACTIONS",
+    "priorityActionsTitle": "Mejoras de alta prioridad",
+    "priorityActionsCount": "Los {{count}} principales",
+    "priorityActionsEmpty": "Por el momento, no hay elementos de mejora de alta prioridad.",
+    "priorityBadge": "Prioridad {{priority}}",
+    "actionLabel": "Qué hacer primero",
+    "expectedEffectLabel": "Cambio esperado",
+    "processFitEyebrow": "PROCESS FIT",
+    "processFitTitle": "Idoneidad de la IA por proceso",
+    "processFitSubtitle": "No se trata de si debe usar la IA, sino de por qué proceso empezar y con qué medidas de seguridad.",
+    "processGroupRecommendedTitle": "Puede usarla desde ahora",
+    "processGroupRecommendedDescription": "Procesos en los que puede probar a pequeña escala tal como están y comprobar los resultados.",
+    "processGroupConditionalTitle": "Utilícela una vez que se den las condiciones",
+    "processGroupConditionalDescription": "Procesos en los que, con reglas y revisiones adecuadas, puede ampliar su uso de forma segura.",
+    "processGroupNotRecommendedTitle": "Primero consolide las bases",
+    "processGroupNotRecommendedDescription": "Procesos en los que conviene priorizar la consolidación de las bases de desarrollo antes de usar la IA.",
+    "processCount": "{{count}} procesos",
+    "processCountNone": "No aplica",
+    "processEmptyBody": "No hay procesos en esta categoría. No es necesario tomar decisiones en esta clasificación.",
+    "firstUseCase": "Primer caso de uso: {{example}}",
+    "judgmentPoint": "Punto clave: {{note}}",
+    "codeReviewNote": "Un humano debe verificar siempre el resultado final de la revisión realizada por la IA",
+    "documentationNote": "Los documentos generados por la IA deben ser revisados por una persona experta",
+    "releaseNote": "La aprobación final debe realizarla siempre una persona",
+    "operationsNote": "Al proporcionar registros o mensajes de error a la IA, siga las normas de manejo de información confidencial",
+    "designNote": "Sin un registro de las decisiones de diseño, resulta difícil que la IA proponga soluciones basadas en decisiones anteriores"
+  },
+  "processNames": {
+    "requirements": {
+      "name": "Definición de requisitos",
+      "example": "Redacción de actas y borradores de requisitos"
+    },
+    "design": {
+      "name": "Diseño",
+      "example": "Comparación de propuestas de diseño e identificación de puntos de revisión"
+    },
+    "implementation": {
+      "name": "Implementación",
+      "example": "Borradores de código y apoyo en la refactorización"
+    },
+    "code_review": {
+      "name": "Revisión de código",
+      "example": "Resumen de los cambios y apoyo en la revisión"
+    },
+    "testing": {
+      "name": "Pruebas",
+      "example": "Apoyo en la creación de casos de prueba y criterios"
+    },
+    "documentation": {
+      "name": "Documentación",
+      "example": "Elaboración de especificaciones, README e historial de cambios"
+    },
+    "release": {
+      "name": "Lanzamiento",
+      "example": "Redacción de notas de lanzamiento y borradores de procedimientos"
+    },
+    "operations": {
+      "name": "Operaciones",
+      "example": "Resumen de registros y apoyo en el triaje inicial de incidencias"
+    }
+  },
+  "answers": {
+    "loading": "Cargando la lista de respuestas…",
+    "emptyTitle": "No se encontró ningún resultado de diagnóstico",
+    "emptyBody": "Acceda de nuevo desde la pantalla de resultados.",
+    "backButton": "Volver a los resultados",
+    "title": "Lista de respuestas",
+    "subtitle": "Todas las preguntas respondidas junto con su explicación.",
+    "groupProfile": "Perfil del equipo",
+    "unknownComment": "Ha respondido «No lo sé». Comience por verificar la situación actual."
+  },
+  "history": {
+    "eyebrow": "HISTORY",
+    "title": "Historial de diagnósticos",
+    "subtitle": "Revise los resultados anteriores y compruebe la evolución de su equipo.",
+    "recordCount": "{{count}} resultados",
+    "loading": "Cargando el historial…",
+    "latestBadge": "Más reciente",
+    "outdatedBadge": "Versión anterior",
+    "viewResultButton": "Ver el resultado",
+    "deleteAriaLabel": "Eliminar este resultado",
+    "dataManagementTitle": "Gestión de datos",
+    "dataManagementBody": "Puede eliminar solo el historial o todos los datos de diagnóstico guardados en este navegador.",
+    "clearHistoryButton": "Eliminar todo el historial",
+    "clearAllButton": "Eliminar todos los datos de diagnóstico",
+    "confirmDeleteAllTitle": "¿Eliminar todos los datos de diagnóstico?",
+    "confirmDeleteHistoryTitle": "¿Eliminar todo el historial de diagnósticos?",
+    "confirmDeleteOneTitle": "¿Eliminar este resultado de diagnóstico?",
+    "confirmDeleteBody": "Esta acción no se puede deshacer.",
+    "cancelButton": "Cancelar",
+    "confirmDeleteButton": "Eliminar",
+    "emptyTitle": "Todavía no hay resultados de diagnóstico",
+    "emptyBody": "Al completar su primer diagnóstico, podrá seguir aquí la evolución de los resultados.",
+    "emptyButton": "Comenzar el diagnóstico"
+  },
+  "about": {
+    "eyebrow": "ABOUT THE ASSESSMENT",
+    "title": "Conozca su situación actual para avanzar en el desarrollo con IA.",
+    "intro": "Este diagnóstico está pensado para revisar las bases de desarrollo necesarias para el uso de la IA. No se limite a juzgar por la puntuación; utilícelo como punto de partida para conversar en equipo sobre los próximos pasos.",
+    "axesEyebrow": "EVALUATION AXES",
+    "axesTitle": "Se evalúa desde 5 perspectivas",
+    "axesTotalPoints": "Total de 100 puntos",
+    "axisPoints": "{{points}} puntos",
+    "axis1Title": "Documentación de desarrollo",
+    "axis1Description": "Si las especificaciones y los fundamentos de las decisiones están organizados de una forma que el equipo pueda utilizar",
+    "axis2Title": "Proceso de desarrollo",
+    "axis2Description": "Si el flujo desde la planificación hasta la revisión y el lanzamiento funciona correctamente",
+    "axis3Title": "Garantía de calidad",
+    "axis3Description": "Si existe un sistema que permita mantener las pruebas y la verificación de calidad de forma continua",
+    "axis4Title": "Base para el uso de la IA",
+    "axis4Description": "Si es posible avanzar en el uso de la IA de forma segura y reproducible",
+    "axis5Title": "Características del proyecto",
+    "axis5Description": "Si el alcance del trabajo y las condiciones previas del equipo están bien definidos",
+    "infoScoreTitle": "Cómo interpretar la puntuación",
+    "infoScoreBody": "Las respuestas se agregan por área para clasificar la madurez del equipo en niveles.",
+    "infoLimitTitle": "Limitaciones del diagnóstico",
+    "infoLimitBody": "El resultado del diagnóstico no es la única respuesta correcta. Interprételo teniendo en cuenta el contexto real de su equipo.",
+    "infoDataTitle": "Tratamiento de los datos",
+    "infoDataBody": "En principio, las respuestas y los resultados se guardan dentro de este navegador.",
+    "ctaTitle": "Convierta la conversación de su equipo en el próximo paso a seguir.",
+    "ctaBody": "Tras el diagnóstico, le recomendamos revisar los resultados en equipo y hablar sobre por dónde empezar.",
+    "ctaButton": "Comenzar el diagnóstico"
+  },
+  "share": {
+    "shareButton": "Compartir",
+    "shareXButton": "Compartir en X",
+    "preparingButton": "Preparando…",
+    "copyUrlButton": "Copiar URL",
+    "copiedButton": "Copiado",
+    "shareText": "He realizado el diagnóstico de preparación para el desarrollo impulsado por IA.\n\nPuntuación de desarrollo impulsado por IA: {{score}} puntos\nReducción estimada del esfuerzo de desarrollo: {{reduction}}\n\n{{hashtags}}",
+    "shareXText": "Hice el diagnóstico de preparación para el desarrollo impulsado por IA: {{score}} puntos, con hasta {{reduction}} de ahorro potencial de esfuerzo 🚀\n\nNo requiere subir código, toma unos 3 minutos. ¿Cuál sería la puntuación de tu equipo?\n\n{{hashtags}}",
+    "shareXImageHint": "Imagen copiada. Péguela en el cuadro de publicación.",
+    "clipboardImageAndTextSuccess": "Se copiaron el texto y la imagen. Péguelos en el campo de publicación y adjunte la imagen",
+    "clipboardImageFailure": "Su navegador no admite la copia de imágenes. Solo se copió el texto de la publicación",
+    "clipboardTextFailure": "No se pudo copiar el texto de la publicación",
+    "copyUrlSuccess": "Se copió la URL",
+    "copyUrlFailure": "No se pudo copiar la URL",
+    "hashtags": "#DesarrolloConIA #ProgramaciónConIA"
+  },
+  "levels": {
+    "1": {
+      "name": "Nivel 1: Es necesario consolidar las bases antes de adoptar la IA",
+      "summary": "Comience por sentar las bases del desarrollo. Puede utilizar la IA como apoyo para el aprendizaje y la organización.",
+      "uses": [
+        "Explicación de código",
+        "Apoyo en la redacción de documentación",
+        "Organización de ideas",
+        "Apoyo al aprendizaje"
+      ]
+    },
+    "2": {
+      "name": "Nivel 2: Es posible un soporte limitado de la IA",
+      "summary": "Puede utilizar el soporte de la IA en ámbitos de bajo riesgo.",
+      "uses": [
+        "Generación de código a pequeña escala",
+        "Propuestas de casos de prueba",
+        "Apoyo en la revisión de código",
+        "Explicación de código existente"
+      ]
+    },
+    "3": {
+      "name": "Nivel 3: Es posible un desarrollo con IA liderado por personas",
+      "summary": "Puede utilizar la IA en tareas prácticas bajo la supervisión de personas.",
+      "uses": [
+        "Implementación por tickets",
+        "Generación de código de pruebas",
+        "Refactorización",
+        "Revisión de diseño",
+        "Actualización de documentación"
+      ]
+    },
+    "4": {
+      "name": "Nivel 4: Apto para el desarrollo impulsado por IA",
+      "summary": "Puede delegar en la IA una amplia gama de tareas de desarrollo, apoyándose en su sistema de revisión y garantía de calidad.",
+      "uses": [
+        "Implementación de funciones por IA",
+        "Cambios en múltiples archivos",
+        "Automatización de pruebas y revisiones",
+        "Ejecución de tareas mediante agentes de IA"
+      ]
+    },
+    "5": {
+      "name": "Nivel 5: Apto para el uso de agentes de IA",
+      "summary": "Se encuentra en condiciones de llevar a cabo un desarrollo impulsado por IA continuo con puertas de calidad.",
+      "uses": [
+        "Operación con múltiples agentes",
+        "Semiautomatización desde los requisitos hasta la implementación",
+        "Revisión automática",
+        "Pruebas automáticas",
+        "Desarrollo continuo con IA y puertas de calidad"
+      ]
+    }
+  },
+  "axisLabels": {
+    "document": "Documentación y formalización del conocimiento",
+    "process": "Proceso de desarrollo",
+    "qa": "Garantía de calidad",
+    "ai": "Sistema de uso de la IA",
+    "project": "Idoneidad del proyecto"
+  },
+  "profileQuestions": {
+    "P1": {
+      "text": "Indique el tamaño del equipo de desarrollo al que se refiere este diagnóstico",
+      "options": {
+        "solo": "Desarrollo individual (1 persona)",
+        "small": "Equipo de 2 a 5 personas",
+        "large": "Equipo de 6 personas o más"
+      }
+    },
+    "P2": {
+      "text": "¿Se trata de un desarrollo en un ámbito con requisitos regulatorios o de seguridad especialmente estrictos, como el financiero, sanitario o público?",
+      "options": {
+        "yes": "Sí",
+        "no": "No",
+        "unknown": "No lo sé"
+      }
+    }
+  },
+  "questions": {
+    "Q01": {
+      "text": "¿Qué tipo de desarrollo es el objetivo?",
+      "strengthText": "Tiene una visión clara del uso de IA según el objeto de desarrollo",
+      "options": {
+        "new_development": "Desarrollo nuevo",
+        "existing_feature_addition": "Adición de funciones a un sistema existente",
+        "maintenance": "Enfocado principalmente en mantenimiento y operación",
+        "legacy_renewal": "Renovación de sistema heredado (legacy)",
+        "planning_phase": "Fase de planificación previa al desarrollo"
+      }
+    },
+    "Q02": {
+      "text": "¿Cuál es el objeto principal del desarrollo?",
+      "strengthText": "El objeto de desarrollo tiene alta afinidad con la asistencia de IA",
+      "options": {
+        "web": "Aplicación web",
+        "mobile": "Aplicación móvil",
+        "business_system": "Sistema de gestión empresarial",
+        "api_backend": "API / Backend",
+        "data_ml": "Análisis de datos / Machine Learning",
+        "embedded": "Sistema embebido / de control",
+        "other": "Otro"
+      }
+    },
+    "Q03": {
+      "text": "¿La tecnología utilizada es una tecnología general que sigue siendo ampliamente utilizada en la actualidad?",
+      "strengthText": "Adopta un stack tecnológico de uso general",
+      "options": {
+        "sufficient": "Se aplica plenamente",
+        "partial": "Se aplica parcialmente",
+        "not_implemented": "No se aplica",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q04": {
+      "text": "¿Hay varias personas que comprenden las especificaciones del sistema?",
+      "strengthText": "La comprensión de las especificaciones se comparte entre varias personas",
+      "options": {
+        "multiple_people": "Varias personas la comprenden",
+        "partial_area": "Solo en algunas áreas la comprenden varias personas",
+        "single_person": "Depende de una persona en concreto",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q05": {
+      "text": "¿Están preparados el README del proyecto y los procedimientos de configuración del entorno?",
+      "strengthText": "El README y los procedimientos de configuración del entorno están preparados",
+      "description": "Resumen del proyecto, método de arranque, variables de entorno, procedimientos de desarrollo, métodos de prueba, etc.",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q06": {
+      "text": "¿Los requisitos y las especificaciones están organizados en un lugar distinto del chat o la comunicación verbal?",
+      "strengthText": "Los requisitos y especificaciones están organizados de forma centralizada",
+      "options": {
+        "organized": "Organizados en Wiki, herramientas de gestión documental, tickets, etc.",
+        "partial": "Solo una parte está organizada",
+        "scattered": "Principalmente dispersos en Excel, correo electrónico y chat",
+        "rarely_exists": "Casi no queda registro"
+      }
+    },
+    "Q07": {
+      "text": "¿Se conservan como documentos las razones de las decisiones de diseño importantes y de la selección de tecnología?",
+      "strengthText": "Las decisiones de diseño y las razones de la selección tecnológica están documentadas",
+      "description": "No se limita a formatos como ADR (Architecture Decision Record); se refiere a que las razones de las decisiones puedan consultarse posteriormente",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q08": {
+      "text": "¿Existen directrices de codificación o convenciones de nomenclatura?",
+      "strengthText": "Las convenciones de codificación están documentadas",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q09": {
+      "text": "¿Están organizadas las especificaciones de la API y de la integración con sistemas externos?",
+      "strengthText": "Las especificaciones de API y de integración externa están organizadas",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q10": {
+      "text": "¿Está documentado el diseño de la base de datos y el significado de los elementos de datos?",
+      "strengthText": "El diseño de la base de datos y las definiciones de datos están documentados",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q11": {
+      "text": "¿Están documentadas las reglas de negocio y el manejo de excepciones?",
+      "strengthText": "Las reglas de negocio y el manejo de excepciones están documentados",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q12": {
+      "text": "¿Existe un lugar donde se puedan consultar incidentes pasados, precauciones y problemas conocidos?",
+      "strengthText": "Los incidentes pasados y las precauciones se han convertido en conocimiento (knowledge base)",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q13": {
+      "text": "¿Gestiona el código fuente con Git?",
+      "strengthText": "El control de versiones con Git está consolidado",
+      "options": {
+        "all_git": "Todo se gestiona con Git",
+        "partial_git": "Solo una parte se gestiona con Git",
+        "other_tools": "Se gestiona con herramientas distintas de Git o mediante uso compartido de archivos",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q14": {
+      "text": "¿Existen reglas para los mensajes de commit de Git?",
+      "strengthText": "Las convenciones de mensajes de commit están consolidadas",
+      "description": "Por ejemplo, que se entienda el propósito del cambio, que se incluya el número de ticket, que la unidad de cambio sea apropiada, etc.",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q15": {
+      "text": "¿Realiza revisiones mediante Pull Request o Merge Request?",
+      "strengthText": "La operativa de revisión mediante Pull Request está consolidada",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q16": {
+      "text": "¿Utiliza una herramienta de gestión de tickets?",
+      "strengthText": "La gestión de tickets está consolidada en el proceso de desarrollo",
+      "description": "GitHub Issues, Jira, Backlog, Redmine, Azure DevOps, Linear, etc.",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q17": {
+      "text": "¿Los tickets incluyen el objetivo, los requisitos y los criterios de finalización?",
+      "strengthText": "Los tickets incluyen objetivo, requisitos y criterios de finalización",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q18": {
+      "text": "¿Puede dividir las tareas de desarrollo en unidades de unas pocas horas a unos pocos días?",
+      "strengthText": "Las tareas de desarrollo se dividen en un tamaño apropiado",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q19": {
+      "text": "¿Están definidos los procedimientos de desarrollo, revisión, prueba y publicación (release)?",
+      "strengthText": "Los procedimientos desde el desarrollo hasta la publicación están definidos",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q20": {
+      "text": "¿Existe un mecanismo de CI/CD o de compilación (build) automática?",
+      "strengthText": "El CI/CD o la compilación automática están implementados",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q33": {
+      "text": "¿Está consolidado el uso de commits frecuentes en unidades pequeñas y el uso de rollback/revert cuando surgen problemas?",
+      "strengthText": "Los commits pequeños y la operativa de rollback están consolidados",
+      "description": "Por ejemplo, hacer commit del trabajo en unidades pequeñas, o la práctica de usar revert o volver a un estado anterior cuando surge un problema",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q21": {
+      "text": "¿Existen pruebas automatizadas?",
+      "strengthText": "Las pruebas automatizadas están implementadas",
+      "options": {
+        "multiple_types": "Existen varios tipos: unitarias, de integración y E2E",
+        "some": "Existen algunas pruebas automatizadas",
+        "rarely_any": "Casi no existen",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q22": {
+      "text": "¿Están claros los puntos de verificación que deben realizarse después de un cambio?",
+      "strengthText": "Los puntos de verificación tras un cambio están claramente definidos",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q23": {
+      "text": "¿Existen criterios para la revisión de código?",
+      "strengthText": "Los criterios de revisión de código están documentados",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q24": {
+      "text": "¿Ejecuta de forma automática el análisis estático, el linting y la verificación de tipos?",
+      "strengthText": "El análisis estático, el linting y la verificación de tipos están automatizados",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q25": {
+      "text": "¿Existe una aprobación humana antes del despliegue a producción?",
+      "strengthText": "La aprobación humana antes del despliegue a producción está consolidada",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q26": {
+      "text": "¿Existen reglas para el manejo de información confidencial y datos personales?",
+      "strengthText": "Las reglas para el manejo de información confidencial y datos personales están establecidas",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q27": {
+      "text": "¿Utiliza herramientas de codificación con IA en las tareas de desarrollo?",
+      "strengthText": "Utiliza herramientas de codificación con IA de forma continua",
+      "options": {
+        "continuous_team_use": "El equipo las usa de forma continua",
+        "partial_members": "Algunos miembros las utilizan",
+        "trial_only": "Solo en fase de prueba",
+        "not_used": "No se utilizan"
+      }
+    },
+    "Q28": {
+      "text": "¿Está definida la información que se puede y no se puede introducir en la IA?",
+      "strengthText": "Las reglas de entrada de información a la IA están claramente definidas",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q29": {
+      "text": "¿Existe una regla que exija que una persona revise el código generado por IA?",
+      "strengthText": "La revisión humana del código generado por IA está reglamentada",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q30": {
+      "text": "¿Existen directrices o archivos de instrucciones para que la IA los consulte?",
+      "strengthText": "Las directrices y archivos de instrucciones de referencia para la IA están preparados",
+      "description": "AGENTS.md, CLAUDE.md, instrucciones de Copilot, etc.",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q31": {
+      "text": "¿Existen indicadores para medir el efecto del uso de la IA?",
+      "strengthText": "Existen indicadores para medir el efecto del uso de la IA",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q32": {
+      "text": "¿Existe una persona responsable o encargada de impulsar la adopción de la IA?",
+      "strengthText": "Existe una estructura para impulsar la adopción de la IA",
+      "options": {
+        "sufficient": "Se implementa plenamente",
+        "partial": "Se implementa parcialmente",
+        "not_implemented": "No se implementa",
+        "unknown": "No lo sé"
+      }
+    },
+    "Q34": {
+      "text": "¿Puede la herramienta de IA consultar de forma segura datos internos de la empresa, como documentación interna, el código base o bases de conocimiento?",
+      "strengthText": "Existe un entorno donde la IA puede consultar datos internos de forma segura",
+      "description": "Se refiere a un estado en el que, mediante la organización de la documentación dentro del repositorio y la integración de herramientas, la IA puede realizar consultas conforme a las reglas de manejo de información confidencial",
+      "options": {
+        "sufficient": "Puede consultar la mayor parte de los datos internos necesarios",
+        "partial": "Puede consultar una parte de los datos internos",
+        "not_implemented": "No está en condiciones de poder consultarlos",
+        "unknown": "No lo sé"
+      }
+    }
+  },
+  "recommendations": {
+    "imp-Q01": {
+      "title": "Elaboración de un plan de uso de IA según la fase de desarrollo",
+      "description": "El alcance de aplicación y los riesgos del uso de IA varían considerablemente según el tipo de desarrollo. Especialmente en la renovación de sistemas heredados o en la fase de planificación, lo prioritario es preparar la base.",
+      "action": "Aclare la fase de desarrollo y elabore una hoja de ruta de uso de IA adaptada a esa fase.",
+      "expectedEffect": "Se evitan expectativas poco realistas y se logra una adopción de IA gradual y fiable."
+    },
+    "imp-Q02": {
+      "title": "Comprensión de las características técnicas del dominio de desarrollo",
+      "description": "En ámbitos con poca trayectoria de asistencia general de codificación con IA, como el control embebido o el análisis de datos/ML, se requiere una adopción prudente.",
+      "action": "Considere herramientas de IA y diseño de prompts especializados para el dominio objetivo.",
+      "expectedEffect": "Se evitan desajustes gracias a una selección de herramientas que tiene en cuenta las características del dominio."
+    },
+    "imp-Q03": {
+      "title": "Consideración de la migración a un stack tecnológico de uso general",
+      "description": "La IA puede ofrecer una asistencia de mayor precisión cuanto más ampliamente utilizada sea la tecnología. Con tecnologías propias o poco comunes, el efecto del uso de IA es limitado.",
+      "action": "Como política de selección tecnológica a largo plazo, considere adoptar un stack tecnológico de uso general y extendido.",
+      "expectedEffect": "Mejora la precisión y la calidad de las propuestas de la asistencia de codificación con IA."
+    },
+    "imp-Q04": {
+      "title": "Eliminación de la dependencia de una sola persona en la comprensión de las especificaciones",
+      "description": "Si la comprensión de las especificaciones depende de una persona en concreto, la estructura de revisión y verificación al usar IA no funciona correctamente.",
+      "action": "Realice trabajo en pareja o documentación para compartir la comprensión de las especificaciones entre varias personas.",
+      "expectedEffect": "Se refuerza la estructura de verificación de los resultados generados por IA y mejora la idoneidad del proceso de implementación."
+    },
+    "imp-Q05": {
+      "title": "Preparación del README y de los procedimientos de configuración del entorno",
+      "description": "Un README deficiente supone una gran barrera para comprender el contexto de desarrollo, tanto para los nuevos integrantes como para las herramientas de IA.",
+      "action": "Documente claramente en el README el resumen del proyecto, los procedimientos de instalación, el método de arranque y el método de pruebas, y verifíquelos periódicamente.",
+      "expectedEffect": "Las herramientas de codificación con IA podrán consultar el contexto de desarrollo correcto."
+    },
+    "imp-Q06": {
+      "title": "Trasladar las especificaciones del chat a documentos formales",
+      "description": "Que las especificaciones estén dispersas en chats y correos electrónicos, o que apenas queden registradas, es un riesgo grave que limita directamente el tope de la puntuación global.",
+      "action": "Consolide los requisitos y especificaciones en un Wiki o herramienta de gestión documental, y defina un flujo de actualización.",
+      "expectedEffect": "La IA podrá consultar las especificaciones para implementar, y se elimina también la restricción que limita el tope de la puntuación global."
+    },
+    "imp-Q07": {
+      "title": "Introducir ADR (registro de decisiones de diseño)",
+      "description": "Si no se registran los antecedentes de las decisiones de diseño, la IA no puede hacer propuestas coherentes que tengan en cuenta las decisiones tomadas en el pasado.",
+      "action": "Primero prepare una plantilla y comience a registrar a partir de las próximas decisiones de diseño importantes.",
+      "expectedEffect": "La IA comprende la intención del diseño y se reducen las propuestas que contradicen decisiones anteriores."
+    },
+    "imp-Q08": {
+      "title": "Elaborar directrices de codificación",
+      "description": "Si no hay convenciones establecidas, el estilo del código generado por IA resulta inconsistente y aumenta el costo de revisión.",
+      "action": "Extraiga las convenciones del código existente y documéntelas de forma que la IA pueda consultarlas.",
+      "expectedEffect": "Mejora la consistencia del código generado por IA y se reduce la carga de revisión."
+    },
+    "imp-Q09": {
+      "title": "Documentación de las especificaciones de API e integración externa",
+      "description": "Si las especificaciones de la API no están preparadas, aumenta el riesgo de que la IA genere código con una interfaz incorrecta.",
+      "action": "Documente las especificaciones de la API en un formato como OpenAPI e introduzca un mecanismo que las mantenga sincronizadas con la implementación.",
+      "expectedEffect": "Se reduce el riesgo de generación incorrecta por parte de la IA en implementaciones que incluyen integración externa."
+    },
+    "imp-Q10": {
+      "title": "Documentación del diseño de la base de datos y de los elementos de datos",
+      "description": "La falta de documentación del modelo de datos dificulta que la IA realice implementaciones que respeten la integridad de los datos.",
+      "action": "Prepare diagramas ER y definiciones de elementos de datos, y establezca reglas de actualización cuando se produzcan cambios.",
+      "expectedEffect": "Se reduce el riesgo de generación incorrecta por parte de la IA en implementaciones relacionadas con datos."
+    },
+    "imp-Q11": {
+      "title": "Documentación de las reglas de negocio y el manejo de excepciones",
+      "description": "Las reglas de negocio que permanecen como conocimiento tácito no pueden ser comprendidas por la IA y son causa de omisiones graves de especificaciones.",
+      "action": "Documente las reglas de negocio y los patrones de excepción, ya sea como documentación o como casos de prueba.",
+      "expectedEffect": "Se reduce el retrabajo al usar IA en los procesos de organización de requisitos e implementación."
+    },
+    "imp-Q12": {
+      "title": "Convertir en conocimiento los incidentes pasados y problemas conocidos",
+      "description": "Sin un registro de incidentes pasados existe el riesgo de repetir problemas similares, y la IA tampoco puede consultarlos.",
+      "action": "Acumule los informes de incidentes y las precauciones en un lugar que se pueda buscar.",
+      "expectedEffect": "Mejora la idoneidad del uso de IA en los procesos de operación y respuesta a incidentes."
+    },
+    "imp-Q13": {
+      "title": "Migrar al control de versiones con Git",
+      "description": "No usar Git dificulta enormemente el seguimiento del historial de cambios y la revisión de diferencias del código generado por IA, y es un factor directo que limita el tope de la puntuación global.",
+      "action": "Migre todo el código fuente a un repositorio Git y establezca reglas básicas de operación de ramas (branches).",
+      "expectedEffect": "Se establecen las condiciones previas para el desarrollo impulsado por IA y se elimina la restricción que limita el tope de la puntuación global."
+    },
+    "imp-Q14": {
+      "title": "Introducción de convenciones para los mensajes de commit",
+      "description": "Si el historial de commits no permite entender el propósito de los cambios, ni las personas ni la IA pueden comprender la intención del cambio.",
+      "action": "Introduzca una convención de mensajes de commit que incluya el propósito del cambio y el número de ticket.",
+      "expectedEffect": "Mejora la legibilidad del historial de cambios y la precisión de la IA al entender las diferencias (diffs)."
+    },
+    "imp-Q15": {
+      "title": "Establecer una estructura de revisión mediante Pull Request",
+      "description": "La ausencia de revisión humana elimina la oportunidad de verificar el código generado por IA, y es un factor que limita el tope de la puntuación global.",
+      "action": "Introduzca un flujo de desarrollo basado en Pull Request / Merge Request y haga obligatoria la revisión.",
+      "expectedEffect": "Se puede incorporar de forma segura el código generado por IA y se elimina la restricción que limita el tope de la puntuación global."
+    },
+    "imp-Q16": {
+      "title": "Introducir una herramienta de gestión de tickets",
+      "description": "Sin gestión de tickets, la granularidad y el avance de las tareas se vuelven opacos, lo que es un factor que limita el tope de la puntuación global.",
+      "action": "Introduzca una herramienta de gestión de tickets como GitHub Issues o Jira y consolide su operativa.",
+      "expectedEffect": "Se aclara la unidad de tareas que se puede encargar a la IA y se elimina la restricción que limita el tope de la puntuación global."
+    },
+    "imp-Q17": {
+      "title": "Incluir el objetivo, los requisitos y los criterios de finalización en los tickets",
+      "description": "Si los criterios de finalización son ambiguos, no se puede definir la granularidad de las tareas encomendadas a la IA, y tampoco quedan claros los criterios para verificar los resultados.",
+      "action": "Añada el objetivo, los requisitos y los criterios de finalización como campos obligatorios en la plantilla de tickets.",
+      "expectedEffect": "Mejora la precisión al delegar tareas en la IA, lo que se convierte en un factor que impulsa la tasa de reducción estimada."
+    },
+    "imp-Q18": {
+      "title": "Dividir las tareas en un tamaño apropiado",
+      "description": "Las tareas demasiado grandes hacen que las instrucciones a la IA sean ambiguas y aumentan el costo de verificar el código generado.",
+      "action": "Consolide la práctica de dividir las tareas en unidades que se completen en unas pocas horas o unos pocos días.",
+      "expectedEffect": "Aumentan las tareas que se pueden delegar a agentes de IA y se reduce la carga de revisión."
+    },
+    "imp-Q19": {
+      "title": "Estandarización de los procedimientos desde el desarrollo hasta la publicación",
+      "description": "Si los procedimientos dependen de una persona en concreto o no están definidos, no se puede construir un flujo estándar que incorpore el uso de IA.",
+      "action": "Elabore un manual de procedimientos desde el desarrollo hasta la publicación y comuníquelo al equipo.",
+      "expectedEffect": "Aumenta la reproducibilidad de todo el flujo de desarrollo, incluido el uso de IA."
+    },
+    "imp-Q20": {
+      "title": "Construir CI/CD o compilación automática",
+      "description": "Si la compilación y las verificaciones automáticas no están implementadas, el ciclo de verificación del código generado por IA se alarga.",
+      "action": "Construya una pipeline que automatice la compilación, las pruebas y las verificaciones estáticas.",
+      "expectedEffect": "Permite verificar el código generado por IA de forma rápida y segura, lo que se convierte en un factor que impulsa la tasa de reducción estimada."
+    },
+    "imp-Q33": {
+      "title": "Consolidar los commits pequeños y la operativa de rollback",
+      "description": "El uso de IA tiende a aumentar el volumen de cambios; sin commits detallados y una operativa que permita revertirlos, resulta difícil retroceder cuando surge un problema.",
+      "action": "Consolide en el equipo la práctica de hacer commit del trabajo en unidades pequeñas y un procedimiento para revertir de forma segura mediante revert, entre otros métodos.",
+      "expectedEffect": "Permite incorporar de forma segura los cambios realizados por IA y recuperarse rápidamente cuando surge un problema."
+    },
+    "imp-Q21": {
+      "title": "Implementar pruebas automatizadas",
+      "description": "La ausencia de pruebas automatizadas es un riesgo grave que elimina la red de seguridad del código generado por IA.",
+      "action": "Implemente de forma gradual pruebas unitarias comenzando por las funciones importantes e incorpórelas al CI.",
+      "expectedEffect": "Permite garantizar de forma mecánica la calidad del código generado por IA y elimina también la restricción que limita el tope de la puntuación global."
+    },
+    "imp-Q22": {
+      "title": "Aclarar los puntos de verificación tras un cambio",
+      "description": "Si los puntos de verificación no están definidos, no se puede verificar el impacto de los cambios (especialmente los realizados por IA).",
+      "action": "Elabore una lista de verificación de comprobación para cada tipo de cambio.",
+      "expectedEffect": "La verificación del código generado por IA se vuelve más fiable y se elimina también la restricción que limita el tope de la puntuación global."
+    },
+    "imp-Q23": {
+      "title": "Documentar los criterios de revisión de código",
+      "description": "Si los criterios de revisión dependen de cada persona, la evaluación de calidad resulta inconsistente y la evaluación del código generado por IA tampoco es coherente.",
+      "action": "Documente los criterios de revisión, como seguridad, legibilidad y rendimiento, y conviértalos en una lista de verificación.",
+      "expectedEffect": "Mejora la idoneidad del uso de IA en el proceso de revisión de código."
+    },
+    "imp-Q24": {
+      "title": "Automatización del análisis estático, el linting y la verificación de tipos",
+      "description": "Sin verificaciones automáticas, no se puede garantizar de forma mecánica la calidad del código generado por IA.",
+      "action": "Incorpore al CI herramientas de linting, verificación de tipos y análisis estático.",
+      "expectedEffect": "Permite detectar automáticamente problemas evidentes en el código generado por IA y reduce la carga de revisión."
+    },
+    "imp-Q25": {
+      "title": "Establecer un proceso de aprobación humana antes del despliegue a producción",
+      "description": "La falta de aprobación humana es un factor que compromete la seguridad al usar IA y que limita el tope de la puntuación global.",
+      "action": "Construya un flujo que incluya obligatoriamente un paso de aprobación humana antes del despliegue a producción.",
+      "expectedEffect": "Permite publicar de forma segura incluso utilizando IA, y se elimina la restricción que limita el tope de la puntuación global."
+    },
+    "imp-Q26": {
+      "title": "Establecer reglas para el manejo de información confidencial y datos personales",
+      "description": "Si las reglas de manejo no están establecidas, aumenta el riesgo de fuga de información al usar herramientas de IA.",
+      "action": "Defina criterios de clasificación y reglas de manejo para la información confidencial y los datos personales, y comuníquelos.",
+      "expectedEffect": "Disminuye el riesgo de fuga de información y se sientan las bases para establecer las reglas de entrada de datos a la IA."
+    },
+    "imp-Q27": {
+      "title": "Ampliar la adopción de herramientas de codificación con IA",
+      "description": "Si el uso de IA no se ha implementado o se mantiene en fase de prueba, no avanza la medición de resultados ni la preparación de la estructura organizativa.",
+      "action": "Realice una implementación piloto a pequeña escala y registre los efectos y los desafíos.",
+      "expectedEffect": "Se acumulan datos reales del uso de IA, que sirven de base para decidir sobre una implementación a gran escala."
+    },
+    "imp-Q28": {
+      "title": "Definir la información cuya entrada a la IA está prohibida",
+      "description": "Si no existen reglas sobre qué información se puede o no introducir en la IA, el riesgo de fuga de información confidencial es alto, lo que limita el tope de la puntuación global.",
+      "action": "Establezca criterios sobre la posibilidad de introducir información en herramientas de IA según cada categoría de confidencialidad, y gestiónelos junto con la configuración de las herramientas.",
+      "expectedEffect": "Permite usar la IA de forma segura y se elimina la restricción que limita el tope de la puntuación global."
+    },
+    "imp-Q29": {
+      "title": "Establecer reglas de revisión para el código generado por IA",
+      "description": "Si no se han preparado los aspectos específicos del código generado por IA (premisas incorrectas, cuestiones de licencia, etc.), persiste el riesgo de calidad.",
+      "action": "Elabore una lista de verificación de revisión específica para el código generado por IA.",
+      "expectedEffect": "Se establece una estructura que permite incorporar el código generado por IA con confianza."
+    },
+    "imp-Q30": {
+      "title": "Preparar directrices y archivos de instrucciones de referencia para la IA",
+      "description": "Sin archivos de instrucciones dirigidos a las herramientas de IA, resulta difícil garantizar la consistencia de los resultados generados por IA.",
+      "action": "Documente las convenciones de codificación y la política de diseño en archivos de referencia para la IA, como AGENTS.md y CLAUDE.md.",
+      "expectedEffect": "Mejora la consistencia y la precisión del código generado por IA."
+    },
+    "imp-Q31": {
+      "title": "Introducir indicadores para medir el efecto del uso de IA",
+      "description": "Sin indicadores de efecto, no se puede explicar el retorno de la inversión, lo que retrasa las decisiones sobre la ampliación del uso de IA.",
+      "action": "Defina KPI como el tiempo de implementación, el tiempo de revisión y el número de defectos, y mídalos de forma continua.",
+      "expectedEffect": "Se dispone de criterios para las decisiones sobre la adopción de IA y se posibilita una mejora continua."
+    },
+    "imp-Q32": {
+      "title": "Designar a la persona encargada de impulsar la adopción de IA",
+      "description": "Sin una persona encargada de impulsar el proceso, la elaboración de reglas y la implementación del uso de IA se vuelven improvisadas.",
+      "action": "Nombre a un responsable o encargado de impulsar la adopción de IA, y establezca una estructura para actualizar las directrices y seleccionar herramientas.",
+      "expectedEffect": "El uso de IA puede continuar y ampliarse de forma organizada."
+    },
+    "imp-Q34": {
+      "title": "Preparar un entorno en el que la IA pueda consultar datos internos de la empresa",
+      "description": "Si las herramientas de IA no pueden consultar la documentación de especificaciones, el código base ni el conocimiento acumulado, la calidad de los resultados generados alcanza un límite debido a la falta de contexto.",
+      "action": "Respetando las reglas de manejo de información confidencial, prepare un entorno en el que la IA pueda consultar datos internos de la empresa mediante la organización de la documentación dentro del repositorio y la integración de herramientas.",
+      "expectedEffect": "Mejora la precisión y la consistencia de los resultados de la IA, y se reduce el retrabajo."
+    }
+  }
+}

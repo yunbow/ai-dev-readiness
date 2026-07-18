@@ -1,0 +1,911 @@
+{
+  "common": {
+    "serviceName": "AI 주도 개발 도입 진단",
+    "headerHistory": "히스토리",
+    "headerAbout": "진단 소개",
+    "footerPrivacy": "응답 내용과 진단 결과는 이 기기의 브라우저 내에서 처리됩니다. 서버나 외부 서비스로 전송되지 않습니다.",
+    "footerAbout": "진단 소개",
+    "tierQuick": "퀵 진단",
+    "tierStandard": "표준 진단",
+    "questionCountUnit": "{{count}}문항",
+    "percentRange": "{{min}}~{{max}}%",
+    "percentSingle": "{{value}}%",
+    "diffPointsPositive": "지난번 대비 +{{diff}}점",
+    "diffPointsNegative": "지난번 대비 {{diff}}점",
+    "loading": "불러오는 중…",
+    "languageSwitcherLabel": "언어 선택"
+  },
+  "languages": {
+    "ja": "日本語",
+    "en": "English",
+    "zh-CN": "简体中文",
+    "ko": "한국어",
+    "es": "Español"
+  },
+  "scoreBand": {
+    "band1": "기반 다지기부터",
+    "band2": "개선의 토대를 마련하는 단계",
+    "band3": "실천을 확대하는 단계",
+    "band4": "AI 활용을 가속할 수 있는 단계",
+    "band5": "조직적 활용을 추진하는 단계"
+  },
+  "home": {
+    "heroBadge": "AI DEVELOPMENT READINESS",
+    "heroTitle": "귀사의 팀은 AI를 맞이할 준비가 되어 있습니까?",
+    "heroSubtitle": "개발 프로세스, 팀 운영, 거버넌스를 시각화합니다. AI 활용을 다음 단계로 끌어올리기 위한 실전 진단입니다.",
+    "heroCtaPrimary": "무료로 진단 시작하기",
+    "heroCtaSecondary": "진단 소개 보기",
+    "heroBadgeTime": "최소 2분",
+    "heroBadgeNoSignup": "가입 불필요",
+    "outcomesEyebrow": "WHAT YOU GET",
+    "outcomesTitle": "진단을 통해 얻을 수 있는 것",
+    "outcomesSubtitle": "모호해지기 쉬운 'AI 활용 성숙도'를, 다음 행동으로 이어지는 형태로 정리합니다.",
+    "outcome1": "AI 활용의 현재 위치를 팀 전체가 공통으로 인식할 수 있습니다",
+    "outcome2": "다음에 정비해야 할 개발 프로세스가 명확해집니다",
+    "outcome3": "바로 실행할 수 있는 개선 액션을 가져갈 수 있습니다",
+    "flowEyebrow": "HOW IT WORKS",
+    "flowTitle": "3단계로 다음 행보를 정하다",
+    "flowLinkText": "진단 코스 보기",
+    "step1Title": "질문에 답하기",
+    "step1Body": "팀의 현재 상황에 맞는 진단 코스를 선택하고 설문에 응답합니다.",
+    "step2Title": "현재 위치 파악하기",
+    "step2Body": "개발 프로세스, 거버넌스, 활용 기반을 다각도로 시각화합니다.",
+    "step3Title": "다음 행보 결정하기",
+    "step3Body": "점수와 추천 액션을 바탕으로 개선 우선순위를 정리합니다.",
+    "ctaTitle": "먼저, 지금의 현재 위치부터.",
+    "ctaSubtitle": "결과는 브라우저 내에 저장되어 나중에 다시 확인할 수 있습니다.",
+    "ctaButton": "진단 시작하기",
+    "heroImageAlt": "AI를 활용하는 개발팀"
+  },
+  "assessmentSelect": {
+    "eyebrow": "ASSESSMENT",
+    "title": "진단 코스 선택",
+    "subtitle": "팀의 상황에 맞게 두 가지 코스 중에서 선택할 수 있습니다. 어느 쪽이든 결과를 바탕으로 다음에 정비해야 할 사항을 정리합니다.",
+    "resumeTitle": "지난 진단을 이어서 진행할 수 있습니다",
+    "resumeBody": "이전까지의 응답이 이 브라우저에 저장되어 있습니다.",
+    "resumeButton": "이어서 재개하기",
+    "restartButton": "처음부터 시작하기",
+    "quickTitle": "퀵 진단",
+    "quickTime": "최소 2분",
+    "quickQuestions": "12문항",
+    "quickDescription": "먼저 현재 상태를 파악하고 싶은 팀을 위한 코스입니다. 개발과 AI 활용의 기초를 간결하게 확인합니다.",
+    "quickFeature1": "프로세스의 현재 위치 확인",
+    "quickFeature2": "개선 우선순위 파악",
+    "quickFeature3": "가입 없이 시작 가능",
+    "standardTitle": "표준 진단",
+    "standardTime": "약 5분",
+    "standardQuestions": "26문항",
+    "standardDescription": "팀의 강점과 과제를 보다 구체적으로 정리하고 싶은 경우에 적합합니다. 실행으로 이어지는 상세한 시사점을 얻을 수 있습니다.",
+    "standardFeature1": "5개 영역을 다각도로 확인",
+    "standardFeature2": "보다 자세한 개선 힌트 제공",
+    "standardFeature3": "결과를 히스토리로 저장",
+    "startCourseButton": "{{title}} 시작하기",
+    "footerSaved": "결과는 브라우저 내에 저장",
+    "footerConversation": "팀 대화의 계기로 활용",
+    "footerLink": "진단 설계 철학 보기"
+  },
+  "assessment": {
+    "eyebrowQuick": "QUICK ASSESSMENT",
+    "eyebrowStandard": "STANDARD ASSESSMENT",
+    "questionCounter": "질문 {{current}} / {{total}}",
+    "noStorageWarning": "이 환경에서는 진행 중인 응답과 히스토리를 저장할 수 없습니다. 응답 중에는 이 화면을 닫지 마세요.",
+    "prevButton": "이전",
+    "nextButton": "다음",
+    "finishButton": "진단 결과 보기",
+    "autoSaveNotice": "응답은 브라우저에 자동으로 저장됩니다",
+    "cancelButton": "진단 중단하기",
+    "keyboardHint": "키보드에서는 1~5 키로도 선택할 수 있습니다."
+  },
+  "questionCard": {
+    "categoryScored": "개발 성숙도 체크",
+    "categoryProfile": "팀 프로필"
+  },
+  "result": {
+    "loading": "진단 결과를 불러오는 중…",
+    "emptyTitle": "진단 결과를 찾을 수 없습니다",
+    "emptyBody": "진단을 완료하면 이곳에 팀의 현재 위치와 다음 액션이 표시됩니다.",
+    "emptyButton": "진단 시작하기",
+    "eyebrow": "ASSESSMENT RESULT",
+    "title": "진단 결과",
+    "subtitle": "현재 위치를 알면 다음 행보를 선택하기가 쉬워집니다. 먼저 우선순위가 높은 개선부터 시작해 보세요.",
+    "outdatedBadge": "이전 버전 결과",
+    "totalScoreLabel": "AI 진단 종합 점수",
+    "levelLabel": "레벨 {{level}}",
+    "reductionLabel": "AI 활용을 통한 개발 생산성 개선 여지",
+    "guidanceAlert": "이 결과는 팀이 개선 우선순위를 정하기 위한 참고 지표입니다. 실제 개발 상황과 함께 무리 없는 다음 한 걸음을 선택해 주세요.",
+    "planningPhaseWarning": "기획·검토 단계이므로 진단은 참고값입니다. 개발 진행 방식이 확정된 시점에 재진단하는 것을 권장합니다.",
+    "scoreBreakdownEyebrow": "SCORE BREAKDOWN",
+    "scoreBreakdownTitle": "영역별 점수",
+    "unknownAlert": "응답을 보류한 문항이 있습니다. 더 정확한 결과를 얻으려면 팀에서 상황을 확인한 후 재진단해 주세요.",
+    "nextActionEyebrow": "NEXT ACTION",
+    "nextActionTitle": "결과를 팀의 다음 대화로.",
+    "nextActionSubtitle": "결과를 공유하고 우선순위가 높은 액션부터 시작해 보세요.",
+    "repeatButton": "같은 응답으로 재진단",
+    "newButton": "새로 진단하기",
+    "historyButton": "히스토리 보기",
+    "answersButton": "응답 목록 보기"
+  },
+  "resultSections": {
+    "priority": {
+      "high": "높음",
+      "medium": "중간",
+      "low": "낮음"
+    },
+    "priorityActionsEyebrow": "PRIORITY ACTIONS",
+    "priorityActionsTitle": "우선순위가 높은 개선",
+    "priorityActionsCount": "상위 {{count}}건",
+    "priorityActionsEmpty": "현재 우선순위가 높은 개선 항목이 없습니다.",
+    "priorityBadge": "우선순위 {{priority}}",
+    "actionLabel": "먼저 해야 할 일",
+    "expectedEffectLabel": "기대할 수 있는 변화",
+    "processFitEyebrow": "PROCESS FIT",
+    "processFitTitle": "공정별 AI 적합도",
+    "processFitSubtitle": "AI를 사용해야 하는지가 아니라, 어느 공정부터 어떤 가드레일로 시작할지를 보여줍니다.",
+    "processGroupRecommendedTitle": "지금 바로 활용 가능",
+    "processGroupRecommendedDescription": "현재 상태 그대로 작게 시도해 효과를 확인할 수 있는 공정입니다.",
+    "processGroupConditionalTitle": "조건을 갖춘 후 활용",
+    "processGroupConditionalDescription": "규칙과 리뷰 체계를 마련하면 안전하게 활용을 확대할 수 있는 공정입니다.",
+    "processGroupNotRecommendedTitle": "기반을 정비한 후에",
+    "processGroupNotRecommendedDescription": "AI 활용보다 먼저 개발 기반 다지기를 우선하고 싶은 공정입니다.",
+    "processCount": "{{count}}개 공정",
+    "processCountNone": "해당 없음",
+    "processEmptyBody": "해당하는 공정이 없습니다. 이 분류에서의 착수 판단은 필요하지 않습니다.",
+    "firstUseCase": "첫 활용 예시: {{example}}",
+    "judgmentPoint": "판단 포인트: {{note}}",
+    "codeReviewNote": "AI 리뷰 결과는 반드시 사람이 최종 확인해 주세요",
+    "documentationNote": "AI가 생성한 문서는 담당 전문가가 검토해 주세요",
+    "releaseNote": "최종 승인은 반드시 사람이 진행해 주세요",
+    "operationsNote": "로그나 오류 내용을 AI에 전달할 때는 기밀정보 취급 규정을 따라 주세요",
+    "designNote": "설계 판단 기록이 없으면 과거 의사결정을 반영한 제안이 어렵습니다"
+  },
+  "processNames": {
+    "requirements": {
+      "name": "요건 정리",
+      "example": "회의록·요건 초안 작성"
+    },
+    "design": {
+      "name": "설계",
+      "example": "설계안 비교·리뷰 관점 도출"
+    },
+    "implementation": {
+      "name": "구현",
+      "example": "코드 초안 작성·리팩터링 지원"
+    },
+    "code_review": {
+      "name": "코드 리뷰",
+      "example": "변경 내용 요약·리뷰 보조"
+    },
+    "testing": {
+      "name": "테스트",
+      "example": "테스트 케이스 및 관점 작성 보조"
+    },
+    "documentation": {
+      "name": "문서화",
+      "example": "사양·README·변경 이력 정비"
+    },
+    "release": {
+      "name": "릴리스",
+      "example": "릴리스 노트·절차 초안 작성"
+    },
+    "operations": {
+      "name": "운영",
+      "example": "로그 요약·장애 1차 분류 보조"
+    }
+  },
+  "answers": {
+    "loading": "응답 목록을 불러오는 중…",
+    "emptyTitle": "진단 결과를 찾을 수 없습니다",
+    "emptyBody": "결과 화면에서 다시 접속해 주세요.",
+    "backButton": "결과로 돌아가기",
+    "title": "응답 목록",
+    "subtitle": "응답한 모든 문항과 각각에 대한 해설입니다.",
+    "groupProfile": "팀 프로필",
+    "unknownComment": "'잘 모르겠음'으로 응답하셨습니다. 먼저 현재 상황 확인부터 시작해 보세요."
+  },
+  "history": {
+    "eyebrow": "HISTORY",
+    "title": "진단 히스토리",
+    "subtitle": "지금까지의 결과를 되돌아보며 팀의 변화를 확인할 수 있습니다.",
+    "recordCount": "결과 {{count}}건",
+    "loading": "히스토리를 불러오는 중…",
+    "latestBadge": "최신",
+    "outdatedBadge": "이전 버전",
+    "viewResultButton": "결과 보기",
+    "deleteAriaLabel": "이 결과 삭제",
+    "dataManagementTitle": "데이터 관리",
+    "dataManagementBody": "히스토리만, 또는 이 브라우저에 저장된 모든 진단 데이터를 삭제할 수 있습니다.",
+    "clearHistoryButton": "히스토리 전체 삭제",
+    "clearAllButton": "모든 진단 데이터 삭제",
+    "confirmDeleteAllTitle": "모든 진단 데이터를 삭제하시겠습니까?",
+    "confirmDeleteHistoryTitle": "진단 히스토리를 모두 삭제하시겠습니까?",
+    "confirmDeleteOneTitle": "이 진단 결과를 삭제하시겠습니까?",
+    "confirmDeleteBody": "이 작업은 되돌릴 수 없습니다.",
+    "cancelButton": "취소",
+    "confirmDeleteButton": "삭제하기",
+    "emptyTitle": "아직 진단 결과가 없습니다",
+    "emptyBody": "첫 진단을 완료하면 이곳에서 결과의 변화를 추적할 수 있습니다.",
+    "emptyButton": "진단 시작하기"
+  },
+  "about": {
+    "eyebrow": "ABOUT THE ASSESSMENT",
+    "title": "AI 개발을 한 걸음 앞으로, 현재 위치를 알아보다.",
+    "intro": "이 진단은 AI 활용에 필요한 개발 기반을 되돌아보기 위한 것입니다. 점수만으로 판단하지 말고, 팀이 다음에 다룰 사항을 논의하는 계기로 활용해 주세요.",
+    "axesEyebrow": "EVALUATION AXES",
+    "axesTitle": "5가지 관점에서 확인합니다",
+    "axesTotalPoints": "합계 100점",
+    "axisPoints": "{{points}}점",
+    "axis1Title": "개발 문서",
+    "axis1Description": "사양이나 판단 근거가 팀에서 사용할 수 있는 형태로 정리되어 있는가",
+    "axis2Title": "개발 프로세스",
+    "axis2Description": "계획·리뷰·릴리스에 이르는 흐름이 제대로 작동하고 있는가",
+    "axis3Title": "품질 보증",
+    "axis3Description": "테스트와 품질 확인을 지속할 수 있는 체계가 있는가",
+    "axis4Title": "AI 활용 기반",
+    "axis4Description": "안전하고 재현 가능한 AI 활용을 추진할 수 있는 상태인가",
+    "axis5Title": "프로젝트 특성",
+    "axis5Description": "대상 과제와 팀의 전제 조건이 정리되어 있는가",
+    "infoScoreTitle": "점수 보는 법",
+    "infoScoreBody": "응답을 영역별로 집계하여 팀의 성숙도를 단계로 정리합니다.",
+    "infoLimitTitle": "진단의 한계",
+    "infoLimitBody": "진단 결과가 유일한 정답은 아닙니다. 현장의 맥락과 함께 판단해 주세요.",
+    "infoDataTitle": "데이터 처리 방식",
+    "infoDataBody": "응답과 결과는 원칙적으로 이 브라우저 내에 저장됩니다.",
+    "ctaTitle": "팀의 대화를 다음 행동으로 이어가세요.",
+    "ctaBody": "진단 후에는 결과를 보면서 '어디서부터 정비할지'를 논의하는 것을 권장합니다.",
+    "ctaButton": "진단 시작하기"
+  },
+  "share": {
+    "shareButton": "공유",
+    "shareXButton": "X에 공유",
+    "preparingButton": "준비 중…",
+    "copyUrlButton": "URL 복사",
+    "copiedButton": "복사했습니다",
+    "shareText": "AI 주도 개발 도입 진단을 체험해 봤습니다.\n\nAI 주도 개발 점수: {{score}}점\n예상 개발 공수 절감률: {{reduction}}\n\n{{hashtags}}",
+    "shareXText": "AI 주도 개발 도입 진단을 해봤더니 {{score}}점! AI 활용으로 개발 공수를 최대 {{reduction}} 줄일 수 있다는 것도 확인했어요 🚀\n\n소스코드 업로드 없이 3분이면 진단 완료. 우리 팀은 몇 점일까요?\n\n{{hashtags}}",
+    "shareXImageHint": "이미지를 복사했습니다. 게시란에 붙여넣어 주세요.",
+    "clipboardImageAndTextSuccess": "게시글과 이미지를 복사했습니다. 게시란에 붙여넣고 이미지를 첨부해 주세요",
+    "clipboardImageFailure": "사용 중인 브라우저에서는 이미지 복사가 지원되지 않습니다. 게시글 텍스트만 복사했습니다",
+    "clipboardTextFailure": "게시글 텍스트를 복사할 수 없었습니다",
+    "copyUrlSuccess": "URL을 복사했습니다",
+    "copyUrlFailure": "URL을 복사할 수 없었습니다",
+    "hashtags": "#AI기반개발 #AI코딩"
+  },
+  "levels": {
+    "1": {
+      "name": "Level 1: AI 도입 전 기반 정비가 필요합니다",
+      "summary": "먼저 개발 기반 다지기부터 시작해 보세요. AI는 학습과 정리를 돕는 파트너로 활용할 수 있습니다.",
+      "uses": [
+        "코드 설명",
+        "문서 작성 보조",
+        "아이디어 정리",
+        "학습 지원"
+      ]
+    },
+    "2": {
+      "name": "Level 2: 제한적인 AI 지원이 가능합니다",
+      "summary": "리스크가 작은 범위에서 AI 지원을 활용할 수 있습니다.",
+      "uses": [
+        "소규모 코드 생성",
+        "테스트 케이스 초안",
+        "코드 리뷰 보조",
+        "기존 코드 설명"
+      ]
+    },
+    "3": {
+      "name": "Level 3: 사람 주도의 AI 개발이 가능합니다",
+      "summary": "사람의 관리하에 실무 태스크에 AI를 활용할 수 있습니다.",
+      "uses": [
+        "티켓 단위 구현",
+        "테스트 코드 생성",
+        "리팩터링",
+        "설계 리뷰",
+        "문서 업데이트"
+      ]
+    },
+    "4": {
+      "name": "Level 4: AI 주도 개발에 적합합니다",
+      "summary": "리뷰와 품질 보증 체계를 활용해 AI에 폭넓은 개발 태스크를 맡길 수 있습니다.",
+      "uses": [
+        "AI를 통한 기능 구현",
+        "다중 파일 변경",
+        "테스트·리뷰 자동화",
+        "AI 에이전트를 통한 태스크 실행"
+      ]
+    },
+    "5": {
+      "name": "Level 5: AI 에이전트 활용에 적합합니다",
+      "summary": "품질 게이트를 갖춘 지속적인 AI 주도 개발을 추진할 수 있는 상태입니다.",
+      "uses": [
+        "다중 에이전트 운영",
+        "요건부터 구현까지 반자동화",
+        "자동 리뷰",
+        "자동 테스트",
+        "품질 게이트를 갖춘 지속적 AI 개발"
+      ]
+    }
+  },
+  "axisLabels": {
+    "document": "문서·형식지화",
+    "process": "개발 프로세스",
+    "qa": "품질 보증",
+    "ai": "AI 이용 체계",
+    "project": "프로젝트 적합성"
+  },
+  "profileQuestions": {
+    "P1": {
+      "text": "이 진단의 대상이 되는 개발 조직의 규모를 알려주세요",
+      "options": {
+        "solo": "개인 개발(1인)",
+        "small": "2~5인 팀",
+        "large": "6인 이상 팀"
+      }
+    },
+    "P2": {
+      "text": "금융·의료·공공 등 규제나 보안 요건이 특히 엄격한 영역의 개발입니까",
+      "options": {
+        "yes": "해당함",
+        "no": "해당하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    }
+  },
+  "questions": {
+    "Q01": {
+      "text": "대상이 되는 개발은 어떤 종류입니까?",
+      "strengthText": "개발 대상에 맞는 AI 활용 방향이 수립되어 있음",
+      "options": {
+        "new_development": "신규 개발",
+        "existing_feature_addition": "기존 시스템에 대한 기능 추가",
+        "maintenance": "유지보수·운영 중심",
+        "legacy_renewal": "레거시 시스템 재구축",
+        "planning_phase": "개발 전 기획·검토 단계"
+      }
+    },
+    "Q02": {
+      "text": "주요 개발 대상은 무엇입니까?",
+      "strengthText": "AI 지원과 친화성이 높은 개발 대상임",
+      "options": {
+        "web": "웹 애플리케이션",
+        "mobile": "모바일 앱",
+        "business_system": "업무 시스템",
+        "api_backend": "API·백엔드",
+        "data_ml": "데이터 분석·머신러닝",
+        "embedded": "임베디드·제어 시스템",
+        "other": "기타"
+      }
+    },
+    "Q03": {
+      "text": "사용 기술은 현재도 널리 사용되고 있는 일반적인 기술입니까?",
+      "strengthText": "일반적인 기술 스택을 채택하고 있음",
+      "options": {
+        "sufficient": "충분히 해당함",
+        "partial": "일부 해당함",
+        "not_implemented": "해당하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q04": {
+      "text": "시스템 사양을 이해하고 있는 담당자가 여러 명 있습니까?",
+      "strengthText": "사양 이해가 여러 담당자에게 공유되어 있음",
+      "options": {
+        "multiple_people": "여러 명이 이해하고 있음",
+        "partial_area": "일부 영역만 여러 명이 이해하고 있음",
+        "single_person": "특정 담당자에게 의존하고 있음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q05": {
+      "text": "프로젝트의 README나 환경 구축 절차가 정리되어 있습니까?",
+      "strengthText": "README와 환경 구축 절차가 정비되어 있음",
+      "description": "프로젝트 개요, 실행 방법, 환경 변수, 개발 절차, 테스트 방법 등",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q06": {
+      "text": "요구사항이나 사양이 채팅이나 구두 이외의 장소에 정리되어 있습니까?",
+      "strengthText": "요구사항·사양이 일원화되어 정리되어 있음",
+      "options": {
+        "organized": "Wiki, 문서 관리 도구, 티켓 등에 정리되어 있음",
+        "partial": "일부만 정리되어 있음",
+        "scattered": "주로 Excel, 이메일, 채팅에 분산되어 있음",
+        "rarely_exists": "거의 남아 있지 않음"
+      }
+    },
+    "Q07": {
+      "text": "중요한 설계 판단이나 기술 선정 이유가 문서로 남아 있습니까?",
+      "strengthText": "설계 판단과 기술 선정 이유가 문서화되어 있음",
+      "description": "ADR(Architecture Decision Record) 등의 형식에 국한되지 않고, 판단 이유를 나중에 확인할 수 있는 상태를 의미합니다",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q08": {
+      "text": "코딩 가이드라인이나 네이밍 규칙이 있습니까?",
+      "strengthText": "코딩 규약이 명문화되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q09": {
+      "text": "API 사양이나 외부 시스템 연동 사양이 정리되어 있습니까?",
+      "strengthText": "API·외부 연동 사양이 정리되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q10": {
+      "text": "DB 설계나 데이터 항목의 의미가 문서화되어 있습니까?",
+      "strengthText": "DB 설계와 데이터 정의가 문서화되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q11": {
+      "text": "업무 규칙이나 예외 처리가 문서화되어 있습니까?",
+      "strengthText": "업무 규칙과 예외 처리가 문서화되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q12": {
+      "text": "과거의 장애, 주의사항, 알려진 문제를 확인할 수 있는 장소가 있습니까?",
+      "strengthText": "과거 장애와 주의사항이 지식화되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q13": {
+      "text": "소스 코드를 Git으로 관리하고 있습니까?",
+      "strengthText": "Git을 통한 버전 관리가 정착되어 있음",
+      "options": {
+        "all_git": "모두 Git으로 관리하고 있음",
+        "partial_git": "일부만 Git으로 관리하고 있음",
+        "other_tools": "Git 이외 또는 파일 공유로 관리하고 있음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q14": {
+      "text": "Git 커밋 메시지에 규칙이 있습니까?",
+      "strengthText": "커밋 메시지 규약이 정착되어 있음",
+      "description": "변경 목적을 알 수 있음, 티켓 번호가 기재됨, 변경 단위가 적절함 등",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q15": {
+      "text": "Pull Request 또는 Merge Request를 통한 리뷰를 진행하고 있습니까?",
+      "strengthText": "Pull Request를 통한 리뷰 운영이 정착되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q16": {
+      "text": "티켓 관리 도구를 사용하고 있습니까?",
+      "strengthText": "티켓 관리가 개발 프로세스에 정착되어 있음",
+      "description": "GitHub Issues, Jira, Backlog, Redmine, Azure DevOps, Linear 등",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q17": {
+      "text": "티켓에 목적, 요구사항, 완료 조건이 기재되어 있습니까?",
+      "strengthText": "티켓에 목적·요구사항·완료 조건이 기재되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q18": {
+      "text": "개발 작업을 몇 시간에서 며칠 정도의 단위로 분할할 수 있습니까?",
+      "strengthText": "개발 작업이 적절한 단위로 분할되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q19": {
+      "text": "개발, 리뷰, 테스트, 릴리스 절차가 정의되어 있습니까?",
+      "strengthText": "개발부터 릴리스까지의 절차가 정의되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q20": {
+      "text": "CI/CD 또는 자동 빌드 체계가 있습니까?",
+      "strengthText": "CI/CD 또는 자동 빌드가 구축되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q33": {
+      "text": "작은 단위로 자주 커밋하거나 문제 발생 시 롤백·리버트를 활용하는 것이 정착되어 있습니까?",
+      "strengthText": "작은 단위 커밋과 롤백 운영이 정착되어 있음",
+      "description": "작업을 작은 단위로 커밋하는 것, 문제 발생 시 revert나 이전 상태로 되돌리는 운영 등",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q21": {
+      "text": "자동 테스트가 있습니까?",
+      "strengthText": "자동 테스트가 구축되어 있음",
+      "options": {
+        "multiple_types": "단위·통합·E2E 등 여러 종류가 있음",
+        "some": "일부 자동 테스트가 있음",
+        "rarely_any": "거의 없음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q22": {
+      "text": "변경 후 실시해야 할 확인 항목이 명확합니까?",
+      "strengthText": "변경 후 확인 항목이 명확하게 정리되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q23": {
+      "text": "코드 리뷰 기준이 있습니까?",
+      "strengthText": "코드 리뷰 기준이 명문화되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q24": {
+      "text": "정적 분석, Lint, 타입 체크를 자동으로 실행하고 있습니까?",
+      "strengthText": "정적 분석·Lint·타입 체크가 자동화되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q25": {
+      "text": "프로덕션 반영 전에 사람에 의한 승인이 있습니까?",
+      "strengthText": "프로덕션 반영 전 사람의 승인이 정착되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q26": {
+      "text": "기밀정보나 개인정보 취급 규칙이 있습니까?",
+      "strengthText": "기밀정보·개인정보 취급 규칙이 정비되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q27": {
+      "text": "AI 코딩 도구를 개발 업무에서 사용하고 있습니까?",
+      "strengthText": "AI 코딩 도구를 지속적으로 활용하고 있음",
+      "options": {
+        "continuous_team_use": "팀에서 지속적으로 이용하고 있음",
+        "partial_members": "일부 멤버가 이용하고 있음",
+        "trial_only": "시험 이용만 하고 있음",
+        "not_used": "이용하고 있지 않음"
+      }
+    },
+    "Q28": {
+      "text": "AI에 입력해도 되는 정보와 금지된 정보가 정의되어 있습니까?",
+      "strengthText": "AI 입력 규칙이 명확하게 정의되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q29": {
+      "text": "AI가 생성한 코드를 사람이 리뷰하는 규칙이 있습니까?",
+      "strengthText": "AI 생성 코드에 대한 사람의 리뷰가 규칙화되어 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q30": {
+      "text": "AI가 참조하도록 하는 가이드라인이나 지시 파일이 있습니까?",
+      "strengthText": "AI 참조용 가이드라인·지시 파일이 정비되어 있음",
+      "description": "AGENTS.md, CLAUDE.md, Copilot instructions 등",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q31": {
+      "text": "AI 이용 효과를 측정하는 지표가 있습니까?",
+      "strengthText": "AI 이용 효과를 측정하는 지표가 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q32": {
+      "text": "AI 도입 책임자 또는 추진 담당자가 있습니까?",
+      "strengthText": "AI 도입 추진 체계가 갖춰져 있음",
+      "options": {
+        "sufficient": "충분히 시행하고 있음",
+        "partial": "일부 시행하고 있음",
+        "not_implemented": "시행하지 않음",
+        "unknown": "잘 모르겠음"
+      }
+    },
+    "Q34": {
+      "text": "AI 도구가 사내 문서, 코드베이스, 지식베이스 등 사내 데이터를 안전하게 참조할 수 있는 상태입니까?",
+      "strengthText": "AI가 사내 데이터를 안전하게 참조할 수 있는 환경이 갖춰져 있음",
+      "description": "저장소 내 문서 정비나 도구 연동 등을 통해 기밀정보 취급 규칙에 따라 AI가 참조할 수 있는 상태를 의미합니다",
+      "options": {
+        "sufficient": "필요한 사내 데이터의 대부분을 참조할 수 있음",
+        "partial": "일부 사내 데이터를 참조할 수 있음",
+        "not_implemented": "참조할 수 있는 상태가 아님",
+        "unknown": "잘 모르겠음"
+      }
+    }
+  },
+  "recommendations": {
+    "imp-Q01": {
+      "title": "개발 단계에 맞는 AI 활용 계획 수립",
+      "description": "개발 종류에 따라 AI 활용의 적용 범위와 리스크가 크게 달라집니다. 특히 레거시 재구축이나 기획 검토 단계에서는 기반 정비가 우선입니다.",
+      "action": "개발 단계를 명확히 하고, 단계에 맞는 AI 활용 로드맵을 수립합니다.",
+      "expectedEffect": "비현실적인 기대치 설정을 방지하고, 단계적이고 확실한 AI 도입이 가능합니다."
+    },
+    "imp-Q02": {
+      "title": "개발 대상 도메인의 기술적 특성 파악",
+      "description": "임베디드 제어, 데이터 분석·ML 등 일반적인 AI 코딩 지원 사례가 적은 영역에서는 신중한 도입이 필요합니다.",
+      "action": "대상 도메인에 특화된 AI 도구나 프롬프트 설계를 검토합니다.",
+      "expectedEffect": "도메인 특성을 고려한 도구 선정으로 미스매치를 피할 수 있습니다."
+    },
+    "imp-Q03": {
+      "title": "일반적인 기술 스택으로의 전환 검토",
+      "description": "AI는 널리 사용되는 기술일수록 정확도 높은 지원이 가능합니다. 독자적이거나 희소한 기술에서는 AI 활용 효과가 제한적입니다.",
+      "action": "장기적인 기술 선정 방침으로, 널리 사용되는 기술 스택 채택을 검토합니다.",
+      "expectedEffect": "AI 코딩 지원의 적중률과 제안 품질이 향상됩니다."
+    },
+    "imp-Q04": {
+      "title": "사양 이해의 특정 담당자 의존 해소",
+      "description": "특정 담당자에게 사양 이해가 의존되어 있으면, AI 활용 시 리뷰·검증 체계가 제대로 작동하지 않습니다.",
+      "action": "사양 이해를 여러 명에게 공유하기 위한 페어 작업이나 문서화를 실시합니다.",
+      "expectedEffect": "AI 생성물에 대한 검증 체계가 강화되고, 구현 공정의 적합성이 향상됩니다."
+    },
+    "imp-Q05": {
+      "title": "README·환경 구축 절차 정비",
+      "description": "README 미비는 신규 참여자와 AI 도구 모두에게 개발 컨텍스트 이해에 큰 걸림돌이 됩니다.",
+      "action": "프로젝트 개요·설치 절차·실행 방법·테스트 방법을 README에 명시하고 정기적으로 검증합니다.",
+      "expectedEffect": "AI 코딩 도구가 올바른 개발 컨텍스트를 참조할 수 있게 됩니다."
+    },
+    "imp-Q06": {
+      "title": "채팅상의 사양을 정식 문서로 옮기기",
+      "description": "사양이 채팅이나 이메일에 분산되어 있거나 거의 남아 있지 않은 상태는 종합 점수 상한에 직결되는 중대한 리스크입니다.",
+      "action": "Wiki나 문서 관리 도구에 요구사항·사양을 집약하고 업데이트 흐름을 정의합니다.",
+      "expectedEffect": "AI가 사양을 참조하여 구현할 수 있게 되고, 종합 점수의 상한 제약도 해제됩니다."
+    },
+    "imp-Q07": {
+      "title": "ADR(설계 판단 기록) 도입",
+      "description": "설계 판단의 배경이 기록되어 있지 않으면, AI가 과거의 의사결정을 반영한 일관된 제안을 하기 어렵습니다.",
+      "action": "우선 템플릿을 마련하고, 향후 중요한 설계 판단부터 기록을 시작합니다.",
+      "expectedEffect": "AI가 설계 의도를 이해하여 과거 판단과 모순되는 제안을 줄일 수 있습니다."
+    },
+    "imp-Q08": {
+      "title": "코딩 가이드라인 정비",
+      "description": "규약이 정비되어 있지 않으면 AI 생성 코드의 스타일이 제각각이 되어 리뷰 비용이 증가합니다.",
+      "action": "기존 코드에서 규약을 추출하여 AI가 참조할 수 있는 형태로 문서화합니다.",
+      "expectedEffect": "AI 생성 코드의 일관성이 향상되고 리뷰 부담이 줄어듭니다."
+    },
+    "imp-Q09": {
+      "title": "API 사양·외부 연동 사양 문서화",
+      "description": "API 사양이 정비되어 있지 않으면 AI가 잘못된 인터페이스로 코드를 생성할 위험이 커집니다.",
+      "action": "OpenAPI 등의 형식으로 API 사양을 정비하고, 구현과의 동기화를 유지하는 체계를 도입합니다.",
+      "expectedEffect": "외부 연동을 포함한 구현에서 AI 오생성 리스크를 줄일 수 있습니다."
+    },
+    "imp-Q10": {
+      "title": "DB 설계·데이터 항목 문서화",
+      "description": "데이터 모델의 문서화 부족은 AI가 데이터 정합성을 수반하는 구현을 하는 데 걸림돌이 됩니다.",
+      "action": "ER 다이어그램이나 데이터 항목 정의를 정비하고, 변경 시 업데이트 규칙을 정합니다.",
+      "expectedEffect": "데이터 관련 구현에서 AI 오생성 리스크를 줄일 수 있습니다."
+    },
+    "imp-Q11": {
+      "title": "업무 규칙·예외 처리 문서화",
+      "description": "암묵지로 남아 있는 업무 규칙은 AI가 파악할 수 없어 중대한 사양 누락의 원인이 됩니다.",
+      "action": "업무 규칙과 예외 패턴을 문서 또는 테스트 케이스로 명문화합니다.",
+      "expectedEffect": "요구사항 정리·구현 공정에서 AI 활용 시 재작업을 줄일 수 있습니다."
+    },
+    "imp-Q12": {
+      "title": "과거 장애·알려진 문제의 지식화",
+      "description": "과거 장애 기록이 없으면 동일한 문제가 반복될 리스크가 있으며, AI도 이를 참조할 수 없습니다.",
+      "action": "장애 보고와 주의사항을 검색 가능한 장소에 축적합니다.",
+      "expectedEffect": "운영·장애 대응 공정에서 AI 활용 적합성이 향상됩니다."
+    },
+    "imp-Q13": {
+      "title": "Git을 통한 버전 관리로 전환",
+      "description": "Git 미사용은 변경 이력 추적과 AI 생성 코드의 diff 리뷰를 현저히 어렵게 하며, 종합 점수 상한의 직접적인 원인이 됩니다.",
+      "action": "모든 소스 코드를 Git 저장소로 이전하고 기본적인 브랜치 운영 규칙을 정비합니다.",
+      "expectedEffect": "AI 기반 개발의 전제 조건이 갖춰지고, 종합 점수의 상한 제약이 해제됩니다."
+    },
+    "imp-Q14": {
+      "title": "커밋 메시지 규약 도입",
+      "description": "커밋 이력에서 변경 목적을 파악할 수 없으면, 사람도 AI도 변경 의도를 이해할 수 없습니다.",
+      "action": "변경 목적이나 티켓 번호를 포함하는 커밋 메시지 규약을 도입합니다.",
+      "expectedEffect": "변경 이력의 가독성이 높아지고, AI의 diff 이해 정확도가 향상됩니다."
+    },
+    "imp-Q15": {
+      "title": "Pull Request 리뷰 체계 확립",
+      "description": "사람에 의한 리뷰가 없는 상태는 AI 생성 코드의 검증 기회를 잃게 하며, 종합 점수 상한의 원인이 됩니다.",
+      "action": "Pull Request / Merge Request 기반의 개발 흐름과 리뷰 필수화를 도입합니다.",
+      "expectedEffect": "AI 생성 코드를 안전하게 반영할 수 있게 되고, 종합 점수의 상한 제약이 해제됩니다."
+    },
+    "imp-Q16": {
+      "title": "티켓 관리 도구 도입",
+      "description": "티켓 관리가 없으면 작업 단위와 진행 상황이 불투명해지며, 종합 점수 상한의 원인이 됩니다.",
+      "action": "GitHub Issues나 Jira 등의 티켓 관리 도구를 도입하고 운영을 정착시킵니다.",
+      "expectedEffect": "AI에 위임할 수 있는 작업 단위가 명확해지고, 종합 점수의 상한 제약이 해제됩니다."
+    },
+    "imp-Q17": {
+      "title": "티켓에 목적·요구사항·완료 조건 기재",
+      "description": "완료 조건이 모호하면, AI에 위임하는 작업의 단위가 정해지지 않고 산출물의 검증 기준도 불명확해집니다.",
+      "action": "티켓 템플릿에 목적·요구사항·완료 조건을 필수 항목으로 추가합니다.",
+      "expectedEffect": "AI에 대한 작업 위임 정확도가 향상되며, 추정 절감률을 높이는 요인이 됩니다."
+    },
+    "imp-Q18": {
+      "title": "작업을 적절한 단위로 분할",
+      "description": "너무 큰 작업은 AI에 대한 지시가 모호해지고, 생성된 코드의 검증 비용이 증가합니다.",
+      "action": "몇 시간에서 며칠 안에 완료되는 단위로 작업을 분할하는 운영을 철저히 합니다.",
+      "expectedEffect": "AI 에이전트에 맡길 수 있는 작업이 늘어나고 리뷰 부담이 줄어듭니다."
+    },
+    "imp-Q19": {
+      "title": "개발~릴리스 절차의 표준화",
+      "description": "절차가 특정 담당자에게 의존하거나 정의되어 있지 않으면, AI 활용을 반영한 표준 흐름을 구축할 수 없습니다.",
+      "action": "개발부터 릴리스까지의 절차서를 작성하고 팀에 공유합니다.",
+      "expectedEffect": "AI 활용을 포함한 전체 개발 흐름의 재현성이 높아집니다."
+    },
+    "imp-Q20": {
+      "title": "CI/CD 또는 자동 빌드 구축",
+      "description": "자동 빌드·자동 체크가 정비되어 있지 않으면, AI 생성 코드의 검증 주기가 길어집니다.",
+      "action": "빌드·테스트·정적 체크를 자동화하는 파이프라인을 구축합니다.",
+      "expectedEffect": "AI 생성 코드를 빠르고 안전하게 검증할 수 있으며, 추정 절감률을 높이는 요인이 됩니다."
+    },
+    "imp-Q33": {
+      "title": "작은 단위 커밋과 롤백 운영 정착",
+      "description": "AI 활용 시에는 변경량이 늘어나기 쉬우며, 세밀한 커밋과 되돌릴 수 있는 운영이 없으면 문제 발생 시 되돌리기가 어려워집니다.",
+      "action": "작업을 작은 단위로 커밋하는 운영과, revert 등으로 안전하게 되돌리는 절차를 팀에 정착시킵니다.",
+      "expectedEffect": "AI에 의한 변경을 안전하게 반영하고, 문제 발생 시 신속하게 복구할 수 있습니다."
+    },
+    "imp-Q21": {
+      "title": "자동 테스트 구축",
+      "description": "자동 테스트의 부재는 AI 생성 코드의 안전망을 잃게 하는 중대한 리스크입니다.",
+      "action": "중요한 기능부터 단위 테스트를 단계적으로 구축하고 CI에 포함시킵니다.",
+      "expectedEffect": "AI 생성 코드의 품질을 기계적으로 담보할 수 있으며, 종합 점수의 상한 제약도 해제됩니다."
+    },
+    "imp-Q22": {
+      "title": "변경 후 확인 항목 명확화",
+      "description": "확인 항목이 정의되어 있지 않으면, 변경(특히 AI에 의한 변경)의 영향을 검증할 수 없습니다.",
+      "action": "변경 유형별 확인 체크리스트를 정비합니다.",
+      "expectedEffect": "AI 생성 코드의 검증이 확실해지고, 종합 점수의 상한 제약도 해제됩니다."
+    },
+    "imp-Q23": {
+      "title": "코드 리뷰 기준의 명문화",
+      "description": "리뷰 기준이 특정 담당자에게 의존하면 품질 판정이 들쭉날쭉해지고, AI 생성 코드에 대한 평가도 일관되지 않습니다.",
+      "action": "보안·가독성·성능 등의 리뷰 관점을 명문화하여 체크리스트화합니다.",
+      "expectedEffect": "코드 리뷰 공정에서 AI 활용 적합성이 향상됩니다."
+    },
+    "imp-Q24": {
+      "title": "정적 분석·Lint·타입 체크 자동화",
+      "description": "자동 체크가 없으면, AI 생성 코드의 기계적인 품질 담보가 불가능합니다.",
+      "action": "Lint·타입 체크·정적 분석 도구를 CI에 포함시킵니다.",
+      "expectedEffect": "AI 생성 코드의 명백한 문제를 자동으로 검출할 수 있어 리뷰 부담이 줄어듭니다."
+    },
+    "imp-Q25": {
+      "title": "프로덕션 반영 전 사람의 승인 프로세스 확립",
+      "description": "사람에 의한 승인의 부재는 AI 활용 시 안전성을 저해하는 종합 점수 상한의 원인입니다.",
+      "action": "프로덕션 반영 전에 반드시 사람의 승인 단계를 두는 흐름을 구축합니다.",
+      "expectedEffect": "AI를 활용하더라도 안전하게 릴리스할 수 있으며, 종합 점수의 상한 제약이 해제됩니다."
+    },
+    "imp-Q26": {
+      "title": "기밀정보·개인정보 취급 규칙 정비",
+      "description": "취급 규칙이 정비되어 있지 않으면, AI 도구 이용 시 정보 유출 리스크가 커집니다.",
+      "action": "기밀정보·개인정보의 분류 기준과 취급 규칙을 수립하고 공유합니다.",
+      "expectedEffect": "정보 유출 리스크가 낮아지고, AI 입력 규칙 정비의 전제 조건이 갖춰집니다."
+    },
+    "imp-Q27": {
+      "title": "AI 코딩 도구 도입 확대",
+      "description": "AI 이용이 이루어지지 않거나 시험 단계에 머물러 있으면, 효과 측정이나 체계 정비가 진전되지 않습니다.",
+      "action": "소규모 파일럿 도입을 실시하여 효과와 과제를 기록합니다.",
+      "expectedEffect": "AI 활용 실적 데이터가 축적되어 본격 도입 판단 자료를 얻을 수 있습니다."
+    },
+    "imp-Q28": {
+      "title": "AI 입력 금지 정보 정의",
+      "description": "AI에 입력해도 되는 정보와 금지 정보에 대한 규칙이 없으면, 기밀정보 유출 리스크가 높아 종합 점수 상한의 원인이 됩니다.",
+      "action": "기밀 구분별로 AI 도구에 대한 입력 가능 여부 기준을 수립하고, 도구 설정과 함께 운영합니다.",
+      "expectedEffect": "안전하게 AI를 이용할 수 있게 되고, 종합 점수의 상한 제약이 해제됩니다."
+    },
+    "imp-Q29": {
+      "title": "AI 생성 코드 리뷰 규칙 수립",
+      "description": "AI 생성 코드 특유의 관점(잘못된 전제, 라이선스 등)이 정비되어 있지 않으면 품질 리스크가 남습니다.",
+      "action": "AI 생성 코드용 리뷰 체크리스트를 수립합니다.",
+      "expectedEffect": "AI 생성 코드를 안심하고 반영할 수 있는 체계가 갖춰집니다."
+    },
+    "imp-Q30": {
+      "title": "AI 참조용 가이드라인·지시 파일 정비",
+      "description": "AI 도구용 지시 파일이 없으면, AI 생성물의 일관성을 확보하기 어렵습니다.",
+      "action": "코딩 규약과 설계 방침을 AGENTS.md, CLAUDE.md 등 AI 참조용 파일로 정비합니다.",
+      "expectedEffect": "AI 생성 코드의 일관성과 정확도가 향상됩니다."
+    },
+    "imp-Q31": {
+      "title": "AI 이용 효과 측정 지표 도입",
+      "description": "효과 지표가 없으면 투자 대비 효과를 설명할 수 없어, AI 활용 확대에 대한 의사결정이 지연됩니다.",
+      "action": "구현 시간·리뷰 시간·결함 수 등의 KPI를 정의하고 지속적으로 측정합니다.",
+      "expectedEffect": "AI 도입에 대한 의사결정 자료가 갖춰지고 지속적인 개선이 가능해집니다."
+    },
+    "imp-Q32": {
+      "title": "AI 도입 추진 담당자 지정",
+      "description": "추진 담당자가 없으면, AI 활용 규칙 정비와 확산이 임기응변식으로 이루어집니다.",
+      "action": "AI 도입 책임자·추진 담당자를 임명하고, 가이드라인 업데이트와 도구 선정 체계를 갖춥니다.",
+      "expectedEffect": "AI 활용을 조직적으로 지속·확대할 수 있게 됩니다."
+    },
+    "imp-Q34": {
+      "title": "AI가 사내 데이터를 참조할 수 있는 환경 조성",
+      "description": "AI 도구가 사양서·코드베이스·지식을 참조할 수 없는 상태에서는 컨텍스트 부족으로 생성물의 품질이 한계에 부딪힙니다.",
+      "action": "기밀정보 취급 규칙을 준수하면서, 저장소 내 문서 정비와 도구 연동을 통해 AI가 사내 데이터를 참조할 수 있는 상태를 조성합니다.",
+      "expectedEffect": "AI 출력의 정확성·일관성이 향상되고 재작업이 줄어듭니다."
+    }
+  }
+}

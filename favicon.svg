@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="background" x1="8" y1="6" x2="56" y2="59" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172554" />
+      <stop offset="1" stop-color="#1D4ED8" />
+    </linearGradient>
+    <linearGradient id="signal" x1="19" y1="18" x2="45" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A5F3FC" />
+      <stop offset="1" stop-color="#22D3EE" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#background)" />
+  <path d="M20 23.5 32 16l12 7.5v17L32 48l-12-7.5v-17Z" fill="none" stroke="#BFDBFE" stroke-linejoin="round" stroke-width="3" />
+  <path d="M20 23.5 32 31l12-7.5M32 31v17M20 40.5l12-9 12 9" fill="none" stroke="#60A5FA" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" />
+  <circle cx="20" cy="23.5" r="4" fill="url(#signal)" />
+  <circle cx="44" cy="23.5" r="4" fill="url(#signal)" />
+  <circle cx="32" cy="31" r="4.5" fill="#F0FDFA" />
+  <circle cx="20" cy="40.5" r="4" fill="url(#signal)" />
+  <circle cx="44" cy="40.5" r="4" fill="url(#signal)" />
+  <circle cx="32" cy="48" r="4" fill="url(#signal)" />
+</svg>

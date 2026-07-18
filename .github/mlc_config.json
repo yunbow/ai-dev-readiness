@@ -1,0 +1,10 @@
+{
+  "ignorePatterns": [
+    { "pattern": "^http://localhost" },
+    { "pattern": "^http://127.0.0.1" },
+    { "pattern": "^https://github\\.com/yunbow/ai-dev-readiness/issues" },
+    { "pattern": "^https://github\\.com/yunbow/ai-dev-readiness/actions/workflows/lint\\.yml" },
+    { "pattern": "^https://www\\.fastcompany\\.com/" }
+  ],
+  "aliveStatusCodes": [200, 206, 429]
+}

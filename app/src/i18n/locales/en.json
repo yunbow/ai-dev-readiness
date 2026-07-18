@@ -1,0 +1,913 @@
+{
+  "common": {
+    "serviceName": "AI-Driven Development Readiness Assessment",
+    "headerHistory": "History",
+    "headerAbout": "About This Assessment",
+    "footerPrivacy": "Your answers and results are processed entirely within your browser on this device. Nothing is sent to a server or external service.",
+    "footerAbout": "About This Assessment",
+    "tierQuick": "Quick Assessment",
+    "tierStandard": "Standard Assessment",
+    "questionCountUnit": "{{count}} questions",
+    "percentRange": "{{min}}–{{max}}%",
+    "percentSingle": "{{value}}%",
+    "diffPointsPositive": "+{{diff}} pts since last time",
+    "diffPointsNegative": "{{diff}} pts since last time",
+    "loading": "Loading…",
+    "languageSwitcherLabel": "Select language",
+    "questionCountUnit_one": "{{count}} question",
+    "questionCountUnit_other": "{{count}} questions"
+  },
+  "languages": {
+    "ja": "日本語",
+    "en": "English",
+    "zh-CN": "简体中文",
+    "ko": "한국어",
+    "es": "Español"
+  },
+  "scoreBand": {
+    "band1": "Building the foundation",
+    "band2": "Laying the groundwork for improvement",
+    "band3": "Expanding practical adoption",
+    "band4": "Accelerating AI adoption",
+    "band5": "Scaling organization-wide adoption"
+  },
+  "home": {
+    "heroBadge": "AI DEVELOPMENT READINESS",
+    "heroTitle": "Is your team ready to embrace AI?",
+    "heroSubtitle": "Visualize your development process, team operations, and governance. A practical assessment to move your AI adoption to the next stage.",
+    "heroCtaPrimary": "Start the free assessment",
+    "heroCtaSecondary": "Learn about this assessment",
+    "heroBadgeTime": "As little as 2 minutes",
+    "heroBadgeNoSignup": "No sign-up required",
+    "outcomesEyebrow": "WHAT YOU GET",
+    "outcomesTitle": "What you'll get from this assessment",
+    "outcomesSubtitle": "We turn the often-vague notion of \"AI adoption maturity\" into something that leads directly to your next action.",
+    "outcome1": "Build a shared understanding across your team of where AI adoption stands today",
+    "outcome2": "Clarify which development processes to address next",
+    "outcome3": "Take away improvement actions you can act on right away",
+    "flowEyebrow": "HOW IT WORKS",
+    "flowTitle": "Three steps to your next move",
+    "flowLinkText": "View assessment courses",
+    "step1Title": "Answer the questions",
+    "step1Body": "Choose the assessment course that fits your team's current situation and answer the questions.",
+    "step2Title": "Understand where you stand",
+    "step2Body": "Visualize your development process, governance, and AI adoption foundation from multiple angles.",
+    "step3Title": "Decide your next move",
+    "step3Body": "Use your score and recommended actions to prioritize improvements.",
+    "ctaTitle": "Start with where you are today.",
+    "ctaSubtitle": "Your results are saved in your browser so you can revisit them later.",
+    "ctaButton": "Start the assessment",
+    "heroImageAlt": "A development team using AI"
+  },
+  "assessmentSelect": {
+    "eyebrow": "ASSESSMENT",
+    "title": "Choose an assessment course",
+    "subtitle": "Choose from two courses based on your team's situation. Both help you organize what to address next based on your results.",
+    "resumeTitle": "You can resume your previous assessment",
+    "resumeBody": "Your partial answers have been saved in this browser.",
+    "resumeButton": "Resume where you left off",
+    "restartButton": "Start over",
+    "quickTitle": "Quick Assessment",
+    "quickTime": "As little as 2 minutes",
+    "quickQuestions": "12 questions",
+    "quickDescription": "For teams that want a quick read on where they stand. A compact check of the fundamentals of development and AI adoption.",
+    "quickFeature1": "Check where your process stands",
+    "quickFeature2": "Understand improvement priorities",
+    "quickFeature3": "No sign-up required to start",
+    "standardTitle": "Standard Assessment",
+    "standardTime": "About 5 minutes",
+    "standardQuestions": "26 questions",
+    "standardDescription": "For a more detailed picture of your team's strengths and challenges. Get insights that lead directly to action.",
+    "standardFeature1": "Multi-faceted review across 5 areas",
+    "standardFeature2": "More detailed improvement guidance",
+    "standardFeature3": "Save results as history",
+    "startCourseButton": "Start {{title}}",
+    "footerSaved": "Results are saved in your browser",
+    "footerConversation": "A starting point for team conversations",
+    "footerLink": "See how this assessment works"
+  },
+  "assessment": {
+    "eyebrowQuick": "QUICK ASSESSMENT",
+    "eyebrowStandard": "STANDARD ASSESSMENT",
+    "questionCounter": "Question {{current}} / {{total}}",
+    "noStorageWarning": "This environment can't save your progress or history. Please don't close this screen while answering.",
+    "prevButton": "Back",
+    "nextButton": "Next",
+    "finishButton": "View results",
+    "autoSaveNotice": "Your answers are automatically saved in your browser",
+    "cancelButton": "Cancel assessment",
+    "keyboardHint": "You can also select an option using the 1–5 keys on your keyboard."
+  },
+  "questionCard": {
+    "categoryScored": "Development Maturity Check",
+    "categoryProfile": "Team Profile"
+  },
+  "result": {
+    "loading": "Loading your results…",
+    "emptyTitle": "No results found",
+    "emptyBody": "Once you complete the assessment, your team's current standing and next actions will appear here.",
+    "emptyButton": "Start the assessment",
+    "eyebrow": "ASSESSMENT RESULT",
+    "title": "Assessment Result",
+    "subtitle": "Knowing where you stand makes it easier to choose your next move. Start with the highest-priority improvements.",
+    "outdatedBadge": "Result from an older version",
+    "totalScoreLabel": "AI Diagnosis: Overall Score",
+    "levelLabel": "Level {{level}}",
+    "reductionLabel": "Potential development productivity gain from AI adoption",
+    "guidanceAlert": "This result is a guideline to help your team prioritize improvements. Use it alongside your actual development context to choose a reasonable next step.",
+    "planningPhaseWarning": "Since this project is still in the planning/discussion stage, this result is a reference only. We recommend reassessing once your development approach is finalized.",
+    "scoreBreakdownEyebrow": "SCORE BREAKDOWN",
+    "scoreBreakdownTitle": "Score by Area",
+    "unknownAlert": "Some questions were left unanswered. For a more accurate result, check with your team and reassess.",
+    "nextActionEyebrow": "NEXT ACTION",
+    "nextActionTitle": "Turn this result into your team's next conversation.",
+    "nextActionSubtitle": "Share it, and start with the highest-priority actions.",
+    "repeatButton": "Reassess with the same answers",
+    "newButton": "Start a new assessment",
+    "historyButton": "View history",
+    "answersButton": "View all answers"
+  },
+  "resultSections": {
+    "priority": {
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "priorityActionsEyebrow": "PRIORITY ACTIONS",
+    "priorityActionsTitle": "High-Priority Improvements",
+    "priorityActionsCount": "Top {{count}} items",
+    "priorityActionsEmpty": "There are currently no high-priority improvement items.",
+    "priorityBadge": "Priority: {{priority}}",
+    "actionLabel": "What to do first",
+    "expectedEffectLabel": "Expected impact",
+    "processFitEyebrow": "PROCESS FIT",
+    "processFitTitle": "AI Suitability by Process",
+    "processFitSubtitle": "Rather than whether to use AI, this shows which process to start with and what guardrails to apply.",
+    "processGroupRecommendedTitle": "Ready to use now",
+    "processGroupRecommendedDescription": "Processes where you can try AI on a small scale as-is and check the results.",
+    "processGroupConditionalTitle": "Use once conditions are in place",
+    "processGroupConditionalDescription": "Processes where you can safely expand AI adoption once rules and reviews are established.",
+    "processGroupNotRecommendedTitle": "Build the foundation first",
+    "processGroupNotRecommendedDescription": "Processes where building a solid development foundation should take priority over AI adoption.",
+    "processCount": "{{count}} processes",
+    "processCountNone": "None",
+    "processEmptyBody": "No processes apply to this category. No action is needed for this classification.",
+    "firstUseCase": "First use case: {{example}}",
+    "judgmentPoint": "Key consideration: {{note}}",
+    "codeReviewNote": "A human must always give final review to AI review results",
+    "documentationNote": "AI-generated documentation should be reviewed by a subject-matter expert",
+    "releaseNote": "Final approval must always be given by a human",
+    "operationsNote": "Follow your confidential information handling rules when passing logs or error details to AI",
+    "designNote": "Without a record of design decisions, it's difficult to make suggestions that account for past decisions"
+  },
+  "processNames": {
+    "requirements": {
+      "name": "Requirements Definition",
+      "example": "Drafting meeting notes and requirements"
+    },
+    "design": {
+      "name": "Design",
+      "example": "Comparing design options and identifying review points"
+    },
+    "implementation": {
+      "name": "Implementation",
+      "example": "Code drafting and refactoring assistance"
+    },
+    "code_review": {
+      "name": "Code Review",
+      "example": "Summarizing changes and assisting with review"
+    },
+    "testing": {
+      "name": "Testing",
+      "example": "Assisting with test case and test perspective creation"
+    },
+    "documentation": {
+      "name": "Documentation",
+      "example": "Maintaining specs, README, and changelogs"
+    },
+    "release": {
+      "name": "Release",
+      "example": "Drafting release notes and procedures"
+    },
+    "operations": {
+      "name": "Operations",
+      "example": "Summarizing logs and assisting with initial incident triage"
+    }
+  },
+  "answers": {
+    "loading": "Loading your answers…",
+    "emptyTitle": "No results found",
+    "emptyBody": "Please access this page again from the results screen.",
+    "backButton": "Back to results",
+    "title": "All Answers",
+    "subtitle": "Every question you answered, along with an explanation for each.",
+    "groupProfile": "Team Profile",
+    "unknownComment": "You answered \"Not sure.\" Start by reviewing your current situation."
+  },
+  "history": {
+    "eyebrow": "HISTORY",
+    "title": "Assessment History",
+    "subtitle": "Review your past results and track how your team has changed.",
+    "recordCount": "{{count}} results",
+    "loading": "Loading history…",
+    "latestBadge": "Latest",
+    "outdatedBadge": "Older version",
+    "viewResultButton": "View result",
+    "deleteAriaLabel": "Delete this result",
+    "dataManagementTitle": "Data Management",
+    "dataManagementBody": "You can delete just your history, or all assessment data saved in this browser.",
+    "clearHistoryButton": "Delete all history",
+    "clearAllButton": "Delete all assessment data",
+    "confirmDeleteAllTitle": "Delete all assessment data?",
+    "confirmDeleteHistoryTitle": "Delete all assessment history?",
+    "confirmDeleteOneTitle": "Delete this assessment result?",
+    "confirmDeleteBody": "This action cannot be undone.",
+    "cancelButton": "Cancel",
+    "confirmDeleteButton": "Delete",
+    "emptyTitle": "No results yet",
+    "emptyBody": "Once you complete your first assessment, you can track how your results change over time here.",
+    "emptyButton": "Start the assessment"
+  },
+  "about": {
+    "eyebrow": "ABOUT THE ASSESSMENT",
+    "title": "Know where you stand to move AI-driven development forward.",
+    "intro": "This assessment is designed to help you review the development foundation needed for AI adoption. Don't judge by the score alone — use it as a starting point for team conversations about what to tackle next.",
+    "axesEyebrow": "EVALUATION AXES",
+    "axesTitle": "Evaluated across 5 dimensions",
+    "axesTotalPoints": "100 points total",
+    "axisPoints": "{{points}} pts",
+    "axis1Title": "Development Documentation",
+    "axis1Description": "Whether specifications and the rationale behind decisions are organized in a form the team can use",
+    "axis2Title": "Development Process",
+    "axis2Description": "Whether planning, review, and release workflows are functioning well",
+    "axis3Title": "Quality Assurance",
+    "axis3Description": "Whether you have mechanisms in place to sustain testing and quality checks",
+    "axis4Title": "AI Adoption Foundation",
+    "axis4Description": "Whether you're set up to use AI safely and reproducibly",
+    "axis5Title": "Project Characteristics",
+    "axis5Description": "Whether the nature of your work and your team's assumptions are clearly defined",
+    "infoScoreTitle": "How to Read Your Score",
+    "infoScoreBody": "Your answers are aggregated by area to place your team's maturity into a defined stage.",
+    "infoLimitTitle": "Limitations of This Assessment",
+    "infoLimitBody": "The result is not the single right answer. Use it in conjunction with your own on-the-ground context.",
+    "infoDataTitle": "How Your Data Is Handled",
+    "infoDataBody": "In principle, your answers and results are saved only within this browser.",
+    "ctaTitle": "Turn your team's conversation into action.",
+    "ctaBody": "After the assessment, we recommend discussing \"where to start\" together as a team while reviewing the results.",
+    "ctaButton": "Start the assessment"
+  },
+  "share": {
+    "shareButton": "Share",
+    "shareXButton": "Share to X",
+    "preparingButton": "Preparing…",
+    "copyUrlButton": "Copy URL",
+    "copiedButton": "Copied",
+    "shareText": "I took the AI-Driven Development Readiness Assessment.\n\nAI-driven development score: {{score}} pts\nEstimated development effort reduction: {{reduction}}\n\n{{hashtags}}",
+    "shareXText": "I just ran the AI-Driven Development Readiness Assessment — scored {{score}} pts, with up to {{reduction}} potential effort savings from AI adoption 🚀\n\nNo source code upload needed, takes about 3 minutes. What's your team's score?\n\n{{hashtags}}",
+    "shareXImageHint": "Image copied. Paste it into the post composer.",
+    "clipboardImageAndTextSuccess": "Copied the post text and image. Paste them into your post and attach the image",
+    "clipboardImageFailure": "Your browser doesn't support copying images. Only the post text was copied",
+    "clipboardTextFailure": "Couldn't copy the post text",
+    "copyUrlSuccess": "URL copied",
+    "copyUrlFailure": "Couldn't copy the URL",
+    "hashtags": "#AIDrivenDevelopment #AICoding"
+  },
+  "levels": {
+    "1": {
+      "name": "Level 1: Foundational work is needed before AI adoption",
+      "summary": "Start by building the foundation for development. AI can serve as a partner for learning and organizing information.",
+      "uses": [
+        "Code explanation",
+        "Documentation assistance",
+        "Idea organization",
+        "Learning support"
+      ]
+    },
+    "2": {
+      "name": "Level 2: Limited AI assistance is possible",
+      "summary": "You can use AI assistance in low-risk areas.",
+      "uses": [
+        "Small-scale code generation",
+        "Draft test cases",
+        "Code review assistance",
+        "Explaining existing code"
+      ]
+    },
+    "3": {
+      "name": "Level 3: Human-led AI development is possible",
+      "summary": "You can use AI for practical tasks under human oversight.",
+      "uses": [
+        "Ticket-level implementation",
+        "Test code generation",
+        "Refactoring",
+        "Design review",
+        "Documentation updates"
+      ]
+    },
+    "4": {
+      "name": "Level 4: Well-suited for AI-driven development",
+      "summary": "With your review and quality assurance practices in place, you can delegate a wide range of development tasks to AI.",
+      "uses": [
+        "AI-driven feature implementation",
+        "Multi-file changes",
+        "Automated testing and review",
+        "Task execution by AI agents"
+      ]
+    },
+    "5": {
+      "name": "Level 5: Well-suited for AI agent adoption",
+      "summary": "You're positioned for continuous AI-driven development backed by quality gates.",
+      "uses": [
+        "Multi-agent operations",
+        "Semi-automation from requirements to implementation",
+        "Automated review",
+        "Automated testing",
+        "Continuous AI-driven development with quality gates"
+      ]
+    }
+  },
+  "axisLabels": {
+    "document": "Documentation & Knowledge Formalization",
+    "process": "Development Process",
+    "qa": "Quality Assurance",
+    "ai": "AI Usage Framework",
+    "project": "Project Suitability"
+  },
+  "profileQuestions": {
+    "P1": {
+      "text": "What is the size of the development team this assessment covers?",
+      "options": {
+        "solo": "Solo developer (1 person)",
+        "small": "Team of 2–5",
+        "large": "Team of 6 or more"
+      }
+    },
+    "P2": {
+      "text": "Is this development in a domain with especially strict regulatory or security requirements, such as finance, healthcare, or the public sector?",
+      "options": {
+        "yes": "Yes",
+        "no": "No",
+        "unknown": "Not sure"
+      }
+    }
+  },
+  "questions": {
+    "Q01": {
+      "text": "What type of development is this?",
+      "strengthText": "Has a clear outlook for AI utilization suited to the development target",
+      "options": {
+        "new_development": "New development",
+        "existing_feature_addition": "Adding features to an existing system",
+        "maintenance": "Mainly maintenance and operations",
+        "legacy_renewal": "Legacy system renewal",
+        "planning_phase": "Pre-development planning/consideration phase"
+      }
+    },
+    "Q02": {
+      "text": "What is the main development target?",
+      "strengthText": "The development target has high affinity with AI assistance",
+      "options": {
+        "web": "Web application",
+        "mobile": "Mobile app",
+        "business_system": "Business system",
+        "api_backend": "API / backend",
+        "data_ml": "Data analysis / machine learning",
+        "embedded": "Embedded / control system",
+        "other": "Other"
+      }
+    },
+    "Q03": {
+      "text": "Are the technologies used common ones that are still widely used today?",
+      "strengthText": "Uses a common technology stack",
+      "options": {
+        "sufficient": "Fully applies",
+        "partial": "Partially applies",
+        "not_implemented": "Does not apply",
+        "unknown": "Not sure"
+      }
+    },
+    "Q04": {
+      "text": "Are there multiple people who understand the system specifications?",
+      "strengthText": "Understanding of specifications is shared among multiple people",
+      "options": {
+        "multiple_people": "Multiple people understand it",
+        "partial_area": "Multiple people understand only some areas",
+        "single_person": "Depends on a specific person",
+        "unknown": "Not sure"
+      }
+    },
+    "Q05": {
+      "text": "Is the project's README and environment setup procedure well maintained?",
+      "strengthText": "The README and environment setup procedures are well maintained",
+      "description": "Project overview, how to start the application, environment variables, development procedures, testing methods, etc.",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q06": {
+      "text": "Are requirements and specifications organized somewhere other than chat or verbal communication?",
+      "strengthText": "Requirements and specifications are organized in a centralized location",
+      "options": {
+        "organized": "Organized in a wiki, document management tool, tickets, etc.",
+        "partial": "Only partially organized",
+        "scattered": "Mainly scattered across Excel, email, and chat",
+        "rarely_exists": "Almost nothing is retained"
+      }
+    },
+    "Q07": {
+      "text": "Are the reasons behind important design decisions and technology choices documented?",
+      "strengthText": "The reasons for design decisions and technology choices are documented",
+      "description": "This refers to a state where the reasons behind decisions can be reviewed later, not limited to formats such as ADRs (Architecture Decision Records).",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q08": {
+      "text": "Do you have coding guidelines or naming conventions?",
+      "strengthText": "Coding conventions are documented",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q09": {
+      "text": "Are API specifications and external system integration specifications organized?",
+      "strengthText": "API and external integration specifications are organized",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q10": {
+      "text": "Is the database design and the meaning of data fields documented?",
+      "strengthText": "The database design and data definitions are documented",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q11": {
+      "text": "Are business rules and exception handling documented?",
+      "strengthText": "Business rules and exception handling are documented",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q12": {
+      "text": "Is there a place where you can review past incidents, precautions, and known issues?",
+      "strengthText": "Past incidents and precautions have been turned into knowledge",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q13": {
+      "text": "Do you manage source code with Git?",
+      "strengthText": "Version control with Git is well established",
+      "options": {
+        "all_git": "Everything is managed with Git",
+        "partial_git": "Only part is managed with Git",
+        "other_tools": "Managed with something other than Git, or via file sharing",
+        "unknown": "Not sure"
+      }
+    },
+    "Q14": {
+      "text": "Are there rules for Git commit messages?",
+      "strengthText": "Commit message conventions are well established",
+      "description": "For example, the purpose of the change is clear, ticket numbers are included, and the change unit size is appropriate",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q15": {
+      "text": "Do you conduct reviews via Pull Requests or Merge Requests?",
+      "strengthText": "Review operations via Pull Requests are well established",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q16": {
+      "text": "Do you use a ticket management tool?",
+      "strengthText": "Ticket management is well established in the development process",
+      "description": "GitHub Issues, Jira, Backlog, Redmine, Azure DevOps, Linear, etc.",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q17": {
+      "text": "Do tickets include the purpose, requirements, and completion criteria?",
+      "strengthText": "Tickets include the purpose, requirements, and completion criteria",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q18": {
+      "text": "Can development tasks be broken down into units of a few hours to a few days?",
+      "strengthText": "Development tasks are broken down into an appropriate granularity",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q19": {
+      "text": "Are the procedures for development, review, testing, and release defined?",
+      "strengthText": "The procedures from development through release are defined",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q20": {
+      "text": "Do you have a CI/CD or automated build system?",
+      "strengthText": "CI/CD or automated builds are in place",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q33": {
+      "text": "Is it standard practice to commit frequently in small units, and to use rollbacks/reverts when problems occur?",
+      "strengthText": "Small commits and rollback practices are well established",
+      "description": "For example, committing work in small units, and reverting to a previous state or using revert when problems occur",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q21": {
+      "text": "Do you have automated tests?",
+      "strengthText": "Automated tests are in place",
+      "options": {
+        "multiple_types": "Multiple types exist: unit, integration, and E2E",
+        "some": "Some automated tests exist",
+        "rarely_any": "Almost none",
+        "unknown": "Not sure"
+      }
+    },
+    "Q22": {
+      "text": "Are the checks to be performed after a change clearly defined?",
+      "strengthText": "The checks to be performed after a change are clearly defined",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q23": {
+      "text": "Do you have code review standards?",
+      "strengthText": "Code review standards are documented",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q24": {
+      "text": "Do you automatically run static analysis, linting, and type checking?",
+      "strengthText": "Static analysis, linting, and type checking are automated",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q25": {
+      "text": "Is there human approval before deploying to production?",
+      "strengthText": "Human approval before production deployment is well established",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q26": {
+      "text": "Do you have rules for handling confidential and personal information?",
+      "strengthText": "Rules for handling confidential and personal information are in place",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q27": {
+      "text": "Do you use AI coding tools in your development work?",
+      "strengthText": "AI coding tools are used on an ongoing basis",
+      "options": {
+        "continuous_team_use": "Used continuously by the team",
+        "partial_members": "Used by some members",
+        "trial_only": "Trial use only",
+        "not_used": "Not used"
+      }
+    },
+    "Q28": {
+      "text": "Are the types of information that may or may not be entered into AI tools clearly defined?",
+      "strengthText": "Rules for input into AI tools are clearly defined",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q29": {
+      "text": "Is there a rule requiring human review of AI-generated code?",
+      "strengthText": "Human review of AI-generated code is established as a rule",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q30": {
+      "text": "Do you have guidelines or instruction files for AI to reference?",
+      "strengthText": "Guidelines and instruction files for AI reference are in place",
+      "description": "AGENTS.md, CLAUDE.md, Copilot instructions, etc.",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q31": {
+      "text": "Do you have metrics to measure the effectiveness of AI usage?",
+      "strengthText": "Metrics exist for measuring the effectiveness of AI usage",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q32": {
+      "text": "Is there a person responsible for or driving AI adoption?",
+      "strengthText": "A structure for driving AI adoption is in place",
+      "options": {
+        "sufficient": "Fully implemented",
+        "partial": "Partially implemented",
+        "not_implemented": "Not implemented",
+        "unknown": "Not sure"
+      }
+    },
+    "Q34": {
+      "text": "Are AI tools able to securely reference internal data such as internal documents, the codebase, and knowledge bases?",
+      "strengthText": "An environment where AI can securely reference internal data is in place",
+      "description": "This refers to a state where, through measures such as maintaining documentation within the repository and integrating tools, AI can reference internal data in compliance with rules for handling confidential information.",
+      "options": {
+        "sufficient": "Can reference most of the necessary internal data",
+        "partial": "Can reference some internal data",
+        "not_implemented": "Not yet in a referenceable state",
+        "unknown": "Not sure"
+      }
+    }
+  },
+  "recommendations": {
+    "imp-Q01": {
+      "title": "Develop an AI utilization plan suited to the development phase",
+      "description": "The scope and risk of AI utilization vary greatly depending on the type of development. In particular, for legacy renewal or the planning/consideration phase, establishing the foundation should come first.",
+      "action": "Clarify the development phase and create an AI utilization roadmap tailored to that phase.",
+      "expectedEffect": "Prevents unrealistic expectations and enables a gradual, reliable rollout of AI adoption."
+    },
+    "imp-Q02": {
+      "title": "Understand the technical characteristics of the development domain",
+      "description": "In areas with limited track record for general AI coding assistance, such as embedded control and data analysis/ML, careful adoption is required.",
+      "action": "Consider AI tools and prompt designs specialized for the target domain.",
+      "expectedEffect": "Selecting tools that account for domain characteristics avoids mismatches."
+    },
+    "imp-Q03": {
+      "title": "Consider migrating to a common technology stack",
+      "description": "AI can provide more accurate assistance for widely used technologies. The benefits of AI utilization are limited for proprietary or rare technologies.",
+      "action": "As a long-term technology selection policy, consider adopting a widely used technology stack.",
+      "expectedEffect": "Improves the accuracy and quality of suggestions from AI coding assistance."
+    },
+    "imp-Q04": {
+      "title": "Eliminate reliance on specific individuals for understanding specifications",
+      "description": "If understanding of specifications depends on a specific person, the review and verification structure will not function properly when using AI.",
+      "action": "Carry out pair work and documentation to share understanding of specifications among multiple people.",
+      "expectedEffect": "Strengthens the verification structure for AI-generated output and improves suitability for the implementation process."
+    },
+    "imp-Q05": {
+      "title": "Maintain the README and environment setup procedures",
+      "description": "A poorly maintained README is a major barrier to understanding the development context, both for new team members and for AI tools.",
+      "action": "Clearly document the project overview, setup procedure, how to run the application, and testing methods in the README, and verify them regularly.",
+      "expectedEffect": "Enables AI coding tools to reference the correct development context."
+    },
+    "imp-Q06": {
+      "title": "Move specifications from chat to formal documents",
+      "description": "Having specifications scattered across chat and email, or barely retained at all, is a serious risk that directly caps the overall score.",
+      "action": "Consolidate requirements and specifications into a wiki or document management tool, and define an update workflow.",
+      "expectedEffect": "Enables AI to reference specifications during implementation, and removes the cap on the overall score."
+    },
+    "imp-Q07": {
+      "title": "Introduce ADRs (Architecture Decision Records)",
+      "description": "If the background behind design decisions is not recorded, AI cannot make consistent proposals that take past decisions into account.",
+      "action": "First prepare a template, then start recording from future important design decisions onward.",
+      "expectedEffect": "Allows AI to understand design intent and reduces proposals that contradict past decisions."
+    },
+    "imp-Q08": {
+      "title": "Establish coding guidelines",
+      "description": "Without established conventions, the style of AI-generated code becomes inconsistent, increasing review costs.",
+      "action": "Extract conventions from existing code and document them in a form AI can reference.",
+      "expectedEffect": "Improves consistency of AI-generated code and reduces review burden."
+    },
+    "imp-Q09": {
+      "title": "Document API specifications and external integration specifications",
+      "description": "Without documented API specifications, there is a higher risk of AI generating code with incorrect interfaces.",
+      "action": "Document API specifications in a format such as OpenAPI, and introduce a mechanism to keep them in sync with the implementation.",
+      "expectedEffect": "Reduces the risk of AI generating incorrect code in implementations involving external integrations."
+    },
+    "imp-Q10": {
+      "title": "Document database design and data fields",
+      "description": "Insufficient documentation of the data model becomes an obstacle to AI-assisted implementation that requires data consistency.",
+      "action": "Maintain ER diagrams and data field definitions, and establish rules for updating them when changes occur.",
+      "expectedEffect": "Reduces the risk of AI generating incorrect code in data-related implementations."
+    },
+    "imp-Q11": {
+      "title": "Document business rules and exception handling",
+      "description": "Business rules that exist only as tacit knowledge cannot be understood by AI, and become a cause of serious specification omissions.",
+      "action": "Document business rules and exception patterns explicitly, either as documentation or as test cases.",
+      "expectedEffect": "Reduces rework when using AI during requirements organization and implementation."
+    },
+    "imp-Q12": {
+      "title": "Turn past incidents and known issues into knowledge",
+      "description": "Without records of past incidents, there is a risk of repeating similar problems, and AI has nothing to reference either.",
+      "action": "Accumulate incident reports and precautions in a searchable location.",
+      "expectedEffect": "Improves suitability for AI utilization in operations and incident response processes."
+    },
+    "imp-Q13": {
+      "title": "Migrate to version control with Git",
+      "description": "Not using Git makes tracking change history and reviewing diffs of AI-generated code extremely difficult, and is a direct cause of the cap on the overall score.",
+      "action": "Migrate all source code to a Git repository and establish basic branch operation rules.",
+      "expectedEffect": "Establishes the prerequisites for AI-driven development and removes the cap on the overall score."
+    },
+    "imp-Q14": {
+      "title": "Introduce commit message conventions",
+      "description": "If the purpose of a change cannot be inferred from the commit history, neither humans nor AI can understand the intent of the change.",
+      "action": "Introduce a commit message convention that includes the purpose of the change and ticket numbers.",
+      "expectedEffect": "Improves the readability of change history and the accuracy with which AI understands diffs."
+    },
+    "imp-Q15": {
+      "title": "Establish a Pull Request review process",
+      "description": "The absence of human review eliminates the opportunity to verify AI-generated code, and is a cause of the cap on the overall score.",
+      "action": "Introduce a Pull Request / Merge Request-based development flow and make review mandatory.",
+      "expectedEffect": "Enables AI-generated code to be incorporated safely, and removes the cap on the overall score."
+    },
+    "imp-Q16": {
+      "title": "Introduce a ticket management tool",
+      "description": "Without ticket management, task granularity and progress become opaque, which is a cause of the cap on the overall score.",
+      "action": "Introduce a ticket management tool such as GitHub Issues or Jira, and establish its use as standard operating procedure.",
+      "expectedEffect": "Clarifies the task units that can be delegated to AI, and removes the cap on the overall score."
+    },
+    "imp-Q17": {
+      "title": "Include the purpose, requirements, and completion criteria in tickets",
+      "description": "If completion criteria are ambiguous, the granularity of tasks delegated to AI cannot be determined, and the criteria for verifying deliverables also become unclear.",
+      "action": "Add purpose, requirements, and completion criteria as required fields in the ticket template.",
+      "expectedEffect": "Improves the accuracy of delegating tasks to AI, and helps push up the estimated reduction rate."
+    },
+    "imp-Q18": {
+      "title": "Break down tasks into an appropriate granularity",
+      "description": "Tasks that are too coarse make instructions to AI ambiguous and increase the cost of verifying the generated code.",
+      "action": "Thoroughly implement the practice of breaking down tasks into units that can be completed in a few hours to a few days.",
+      "expectedEffect": "Increases the number of tasks that can be delegated to AI agents and reduces review burden."
+    },
+    "imp-Q19": {
+      "title": "Standardize the procedures from development through release",
+      "description": "If procedures depend on specific individuals or are undefined, it is not possible to build a standard workflow that incorporates AI utilization.",
+      "action": "Create a procedure manual covering everything from development to release, and communicate it to the team.",
+      "expectedEffect": "Improves the reproducibility of the entire development workflow, including AI utilization."
+    },
+    "imp-Q20": {
+      "title": "Build a CI/CD or automated build system",
+      "description": "Without automated builds and automated checks, the verification cycle for AI-generated code becomes prolonged.",
+      "action": "Build a pipeline that automates builds, tests, and static checks.",
+      "expectedEffect": "Enables AI-generated code to be verified quickly and safely, and helps push up the estimated reduction rate."
+    },
+    "imp-Q33": {
+      "title": "Establish the practice of small commits and rollback operations",
+      "description": "AI utilization tends to increase the volume of changes, and without a practice of fine-grained commits and the ability to roll back, reverting changes becomes difficult when problems occur.",
+      "action": "Establish, as a team practice, committing work in small units and procedures for safely reverting using tools like revert.",
+      "expectedEffect": "Enables AI-driven changes to be incorporated safely and allows quick recovery when problems occur."
+    },
+    "imp-Q21": {
+      "title": "Establish automated tests",
+      "description": "The absence of automated tests is a serious risk that removes the safety net for AI-generated code.",
+      "action": "Progressively build unit tests starting with important features, and incorporate them into CI.",
+      "expectedEffect": "Enables the quality of AI-generated code to be mechanically assured, and removes the cap on the overall score."
+    },
+    "imp-Q22": {
+      "title": "Clarify the checks to perform after a change",
+      "description": "Without defined checks, it is not possible to verify the impact of changes (especially those made by AI).",
+      "action": "Prepare a verification checklist for each type of change.",
+      "expectedEffect": "Makes verification of AI-generated code reliable, and removes the cap on the overall score."
+    },
+    "imp-Q23": {
+      "title": "Document code review standards",
+      "description": "If review standards depend on individual reviewers, quality judgments will vary, and evaluation of AI-generated code will also be inconsistent.",
+      "action": "Document review criteria such as security, readability, and performance, and turn them into a checklist.",
+      "expectedEffect": "Improves suitability for AI utilization in the code review process."
+    },
+    "imp-Q24": {
+      "title": "Automate static analysis, linting, and type checking",
+      "description": "Without automated checks, the quality of AI-generated code cannot be mechanically assured.",
+      "action": "Incorporate linting, type checking, and static analysis tools into CI.",
+      "expectedEffect": "Enables automatic detection of obvious problems in AI-generated code and reduces review burden."
+    },
+    "imp-Q25": {
+      "title": "Establish a human approval process before production deployment",
+      "description": "The lack of human approval undermines safety when using AI, and is a cause of the cap on the overall score.",
+      "action": "Build a workflow that always includes a human approval step before production deployment.",
+      "expectedEffect": "Enables safe releases even when using AI, and removes the cap on the overall score."
+    },
+    "imp-Q26": {
+      "title": "Establish rules for handling confidential and personal information",
+      "description": "Without established handling rules, the risk of information leakage increases when using AI tools.",
+      "action": "Establish classification criteria and handling rules for confidential and personal information, and communicate them.",
+      "expectedEffect": "Reduces the risk of information leakage and establishes the prerequisites for defining AI input rules."
+    },
+    "imp-Q27": {
+      "title": "Expand the adoption of AI coding tools",
+      "description": "If AI usage remains unimplemented or stuck at the trial stage, progress on measuring effectiveness and building a support structure will stall.",
+      "action": "Carry out a small-scale pilot rollout and record the effects and challenges.",
+      "expectedEffect": "Accumulates track-record data on AI utilization and provides a basis for deciding on full-scale rollout."
+    },
+    "imp-Q28": {
+      "title": "Define information that must not be entered into AI",
+      "description": "Without rules defining what information may or may not be entered into AI, the risk of leaking confidential information is high, and this is a cause of the cap on the overall score.",
+      "action": "Establish criteria for whether information can be entered into AI tools for each confidentiality classification, and operate them together with tool settings.",
+      "expectedEffect": "Enables safe use of AI, and removes the cap on the overall score."
+    },
+    "imp-Q29": {
+      "title": "Establish review rules for AI-generated code",
+      "description": "Without established review criteria specific to AI-generated code (such as incorrect assumptions or licensing issues), quality risks remain.",
+      "action": "Establish a review checklist specifically for AI-generated code.",
+      "expectedEffect": "Establishes a structure for incorporating AI-generated code with confidence."
+    },
+    "imp-Q30": {
+      "title": "Prepare guidelines and instruction files for AI reference",
+      "description": "Without instruction files for AI tools, it becomes difficult to ensure consistency in AI-generated output.",
+      "action": "Document coding conventions and design policies as AI-reference files such as AGENTS.md and CLAUDE.md.",
+      "expectedEffect": "Improves the consistency and accuracy of AI-generated code."
+    },
+    "imp-Q31": {
+      "title": "Introduce metrics to measure the effectiveness of AI usage",
+      "description": "Without effectiveness metrics, return on investment cannot be explained, delaying decisions to expand AI utilization.",
+      "action": "Define KPIs such as implementation time, review time, and defect counts, and measure them continuously.",
+      "expectedEffect": "Provides a basis for decision-making on AI adoption and enables continuous improvement."
+    },
+    "imp-Q32": {
+      "title": "Appoint a person to drive AI adoption",
+      "description": "Without someone driving adoption, establishing rules for AI utilization and its rollout becomes ad hoc.",
+      "action": "Appoint a person responsible for and driving AI adoption, and establish a structure for updating guidelines and selecting tools.",
+      "expectedEffect": "Enables AI utilization to continue and expand in an organized manner."
+    },
+    "imp-Q34": {
+      "title": "Establish an environment where AI can reference internal data",
+      "description": "If AI tools cannot reference specifications, the codebase, and knowledge, the quality of generated output will hit a ceiling due to insufficient context.",
+      "action": "In compliance with rules for handling confidential information, establish a state where AI can reference internal data through measures such as maintaining documentation within the repository and integrating tools.",
+      "expectedEffect": "Improves the accuracy and consistency of AI output and reduces rework."
+    }
+  }
+}

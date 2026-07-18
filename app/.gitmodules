@@ -1,0 +1,6 @@
+[submodule "docs/ai-dev-os"]
+	path = docs/ai-dev-os
+	url = https://github.com/yunbow/ai-dev-os-rules-typescript
+[submodule ".claude/plugins/ai-dev-os"]
+	path = .claude/plugins/ai-dev-os
+	url = https://github.com/yunbow/ai-dev-os-plugin-claude-code

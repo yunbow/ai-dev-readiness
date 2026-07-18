@@ -1,0 +1,10 @@
+import { createHashRouter } from "react-router-dom";
+import { Layout } from "@/app/Layout";
+import { HomePage } from "@/pages/HomePage";
+import { AssessmentSelectPage } from "@/pages/AssessmentSelectPage";
+import { AssessmentPage } from "@/pages/AssessmentPage";
+import { ResultPage } from "@/pages/ResultPage";
+import { AnswersPage } from "@/pages/AnswersPage";
+import { HistoryPage } from "@/pages/HistoryPage";
+import { AboutPage } from "@/pages/AboutPage";
+export const router = createHashRouter([{ element: <Layout />, children: [{ path: "/", element: <HomePage /> }, { path: "/assessments", element: <AssessmentSelectPage /> }, { path: "/assessment/:tier", element: <AssessmentPage /> }, { path: "/result", element: <ResultPage /> }, { path: "/result/:id", element: <ResultPage /> }, { path: "/result/:id/answers", element: <AnswersPage /> }, { path: "/history", element: <HistoryPage /> }, { path: "/about", element: <AboutPage /> }] }]);

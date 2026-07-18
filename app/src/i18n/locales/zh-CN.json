@@ -1,0 +1,911 @@
+{
+  "common": {
+    "serviceName": "AI驱动开发导入诊断",
+    "headerHistory": "历史记录",
+    "headerAbout": "关于诊断",
+    "footerPrivacy": "您的回答内容和诊断结果均在本设备的浏览器内处理，不会发送到服务器或外部服务。",
+    "footerAbout": "关于诊断",
+    "tierQuick": "快速诊断",
+    "tierStandard": "标准诊断",
+    "questionCountUnit": "{{count}}题",
+    "percentRange": "{{min}}〜{{max}}%",
+    "percentSingle": "{{value}}%",
+    "diffPointsPositive": "较上次 +{{diff}}分",
+    "diffPointsNegative": "较上次 {{diff}}分",
+    "loading": "正在加载…",
+    "languageSwitcherLabel": "选择语言"
+  },
+  "languages": {
+    "ja": "日本語",
+    "en": "English",
+    "zh-CN": "简体中文",
+    "ko": "한국어",
+    "es": "Español"
+  },
+  "scoreBand": {
+    "band1": "从打好基础开始",
+    "band2": "完善改进基础的阶段",
+    "band3": "推广实践的阶段",
+    "band4": "可以加速AI应用的阶段",
+    "band5": "推进组织化应用的阶段"
+  },
+  "home": {
+    "heroBadge": "AI DEVELOPMENT READINESS",
+    "heroTitle": "您的团队，准备好迎接AI了吗？",
+    "heroSubtitle": "将开发流程、团队运营与治理可视化。这是一项实用的诊断，帮助您的AI应用迈向下一个阶段。",
+    "heroCtaPrimary": "免费开始诊断",
+    "heroCtaSecondary": "了解诊断详情",
+    "heroBadgeTime": "最快2分钟",
+    "heroBadgeNoSignup": "无需注册",
+    "outcomesEyebrow": "WHAT YOU GET",
+    "outcomesTitle": "诊断可以带来什么",
+    "outcomesSubtitle": "将容易变得模糊的“AI应用成熟度”，梳理为可指导下一步行动的清晰结果。",
+    "outcome1": "让团队对AI应用的现状形成共同认知",
+    "outcome2": "明确接下来需要完善的开发流程",
+    "outcome3": "带回易于落地执行的改进行动",
+    "flowEyebrow": "HOW IT WORKS",
+    "flowTitle": "三个步骤，迈向下一步",
+    "flowLinkText": "查看诊断课程",
+    "step1Title": "回答问题",
+    "step1Body": "选择符合团队现状的诊断课程，回答相应问题。",
+    "step2Title": "了解现状",
+    "step2Body": "从开发流程、治理、应用基础等多个维度进行可视化呈现。",
+    "step3Title": "确定下一步行动",
+    "step3Body": "根据得分与推荐行动，梳理改进的优先顺序。",
+    "ctaTitle": "先从了解现状开始。",
+    "ctaSubtitle": "结果将保存在浏览器内，之后可随时查看。",
+    "ctaButton": "开始诊断",
+    "heroImageAlt": "使用AI的开发团队"
+  },
+  "assessmentSelect": {
+    "eyebrow": "ASSESSMENT",
+    "title": "选择诊断课程",
+    "subtitle": "可根据团队情况，从两种课程中选择。无论选择哪种，都会基于结果梳理出接下来需要完善的事项。",
+    "resumeTitle": "可以继续上次的诊断",
+    "resumeBody": "此浏览器中保存了尚未完成的回答记录。",
+    "resumeButton": "继续上次的进度",
+    "restartButton": "从头开始",
+    "quickTitle": "快速诊断",
+    "quickTime": "最快2分钟",
+    "quickQuestions": "12题",
+    "quickDescription": "适合想先了解当前状态的团队。用最短时间确认开发与AI应用的基础情况。",
+    "quickFeature1": "确认开发流程的现状",
+    "quickFeature2": "了解改进的优先顺序",
+    "quickFeature3": "无需注册即可开始",
+    "standardTitle": "标准诊断",
+    "standardTime": "约5分钟",
+    "standardQuestions": "26题",
+    "standardDescription": "适合希望更具体地梳理团队优势与课题的场景。可获得更利于落地执行的详细建议。",
+    "standardFeature1": "从5个领域进行多维度确认",
+    "standardFeature2": "更详细的改进提示",
+    "standardFeature3": "将结果保存为历史记录",
+    "startCourseButton": "开始{{title}}",
+    "footerSaved": "结果保存在浏览器内",
+    "footerConversation": "作为团队讨论的契机",
+    "footerLink": "了解诊断的设计理念"
+  },
+  "assessment": {
+    "eyebrowQuick": "QUICK ASSESSMENT",
+    "eyebrowStandard": "STANDARD ASSESSMENT",
+    "questionCounter": "问题 {{current}} / {{total}}",
+    "noStorageWarning": "当前环境无法保存中途答案和历史记录。请在作答期间不要关闭此页面。",
+    "prevButton": "上一步",
+    "nextButton": "下一步",
+    "finishButton": "查看诊断结果",
+    "autoSaveNotice": "答案会自动保存在浏览器中",
+    "cancelButton": "中断诊断",
+    "keyboardHint": "也可以使用键盘上的 1〜5 键进行选择。"
+  },
+  "questionCard": {
+    "categoryScored": "开发成熟度检查",
+    "categoryProfile": "团队概况"
+  },
+  "result": {
+    "loading": "正在加载诊断结果…",
+    "emptyTitle": "未找到诊断结果",
+    "emptyBody": "完成诊断后，此处将显示团队现状与下一步行动建议。",
+    "emptyButton": "开始诊断",
+    "eyebrow": "ASSESSMENT RESULT",
+    "title": "诊断结果",
+    "subtitle": "了解现状后，才能更容易地选择下一步行动。请先从优先级较高的改进项着手。",
+    "outdatedBadge": "旧版本结果",
+    "totalScoreLabel": "AI诊断 综合得分",
+    "levelLabel": "等级 {{level}}",
+    "reductionLabel": "通过AI应用可改善的开发生产力空间",
+    "guidanceAlert": "此结果仅作为团队确定改进优先顺序的参考。请结合实际开发情况，选择切实可行的下一步行动。",
+    "planningPhaseWarning": "由于当前处于规划/构想阶段，本次诊断结果仅供参考。建议在开发方式确定后再重新进行诊断。",
+    "scoreBreakdownEyebrow": "SCORE BREAKDOWN",
+    "scoreBreakdownTitle": "各领域得分",
+    "unknownAlert": "存在保留未答的问题。若想获得更精确的结果，请在团队内确认相关情况后重新进行诊断。",
+    "nextActionEyebrow": "NEXT ACTION",
+    "nextActionTitle": "让结果成为团队下一次讨论的契机。",
+    "nextActionSubtitle": "分享结果，从优先级最高的行动开始着手。",
+    "repeatButton": "使用相同答案重新诊断",
+    "newButton": "开始新的诊断",
+    "historyButton": "查看历史记录",
+    "answersButton": "查看回答列表"
+  },
+  "resultSections": {
+    "priority": {
+      "high": "高",
+      "medium": "中",
+      "low": "低"
+    },
+    "priorityActionsEyebrow": "PRIORITY ACTIONS",
+    "priorityActionsTitle": "优先级较高的改进项",
+    "priorityActionsCount": "前 {{count}} 项",
+    "priorityActionsEmpty": "目前没有优先级较高的改进项。",
+    "priorityBadge": "优先级 {{priority}}",
+    "actionLabel": "首先应做的事",
+    "expectedEffectLabel": "预期变化",
+    "processFitEyebrow": "PROCESS FIT",
+    "processFitTitle": "各环节的AI适用性",
+    "processFitSubtitle": "重点并非是否应该使用AI，而是应从哪个环节、以怎样的防护措施开始。",
+    "processGroupRecommendedTitle": "现在即可应用",
+    "processGroupRecommendedDescription": "在现有条件下即可小规模试用并确认效果的环节。",
+    "processGroupConditionalTitle": "完善条件后再应用",
+    "processGroupConditionalDescription": "只要建立好规则和评审机制，即可安全地扩大应用范围的环节。",
+    "processGroupNotRecommendedTitle": "先完善基础再考虑",
+    "processGroupNotRecommendedDescription": "相较于AI应用，更应优先夯实开发基础的环节。",
+    "processCount": "{{count}}个环节",
+    "processCountNone": "暂无符合项",
+    "processEmptyBody": "没有符合条件的环节。此分类下无需做出着手判断。",
+    "firstUseCase": "首个应用示例：{{example}}",
+    "judgmentPoint": "判断要点：{{note}}",
+    "codeReviewNote": "AI评审结果必须由人工进行最终确认",
+    "documentationNote": "AI生成的文档必须由相关领域专家进行审阅",
+    "releaseNote": "最终批准必须由人工进行",
+    "operationsNote": "向AI提供日志或错误信息时，请遵守机密信息的处理规定",
+    "designNote": "若没有设计决策的记录，将难以基于以往决策提出合理建议"
+  },
+  "processNames": {
+    "requirements": {
+      "name": "需求梳理",
+      "example": "会议纪要、需求草案的编写"
+    },
+    "design": {
+      "name": "设计",
+      "example": "设计方案对比、评审要点梳理"
+    },
+    "implementation": {
+      "name": "开发实现",
+      "example": "代码草稿编写、重构辅助"
+    },
+    "code_review": {
+      "name": "代码评审",
+      "example": "变更内容摘要、评审辅助"
+    },
+    "testing": {
+      "name": "测试",
+      "example": "测试用例及测试要点的编写辅助"
+    },
+    "documentation": {
+      "name": "文档",
+      "example": "规格说明、README、变更日志的完善"
+    },
+    "release": {
+      "name": "发布",
+      "example": "发布说明及发布流程草案的编写"
+    },
+    "operations": {
+      "name": "运维",
+      "example": "日志摘要、故障初步排查辅助"
+    }
+  },
+  "answers": {
+    "loading": "正在加载回答列表…",
+    "emptyTitle": "未找到诊断结果",
+    "emptyBody": "请从结果页面重新访问。",
+    "backButton": "返回结果页",
+    "title": "回答列表",
+    "subtitle": "以下是您回答的全部问题及相应说明。",
+    "groupProfile": "团队概况",
+    "unknownComment": "您选择了“不确定”。建议先从了解当前状况开始。"
+  },
+  "history": {
+    "eyebrow": "HISTORY",
+    "title": "诊断历史",
+    "subtitle": "回顾以往的结果，了解团队的变化情况。",
+    "recordCount": "{{count}}条结果",
+    "loading": "正在加载历史记录…",
+    "latestBadge": "最新",
+    "outdatedBadge": "旧版本",
+    "viewResultButton": "查看结果",
+    "deleteAriaLabel": "删除此结果",
+    "dataManagementTitle": "数据管理",
+    "dataManagementBody": "您可以仅删除历史记录，或删除保存在此浏览器中的全部诊断数据。",
+    "clearHistoryButton": "删除全部历史记录",
+    "clearAllButton": "删除全部诊断数据",
+    "confirmDeleteAllTitle": "确定要删除全部诊断数据吗？",
+    "confirmDeleteHistoryTitle": "确定要删除全部诊断历史记录吗？",
+    "confirmDeleteOneTitle": "确定要删除此诊断结果吗？",
+    "confirmDeleteBody": "此操作无法撤销。",
+    "cancelButton": "取消",
+    "confirmDeleteButton": "删除",
+    "emptyTitle": "尚无诊断结果",
+    "emptyBody": "完成首次诊断后，即可在此追踪结果的变化。",
+    "emptyButton": "开始诊断"
+  },
+  "about": {
+    "eyebrow": "ABOUT THE ASSESSMENT",
+    "title": "了解现状，推进AI驱动开发。",
+    "intro": "本诊断旨在帮助您回顾AI应用所需的开发基础。请不要仅凭分数做判断，而应将其作为团队讨论下一步行动的契机。",
+    "axesEyebrow": "EVALUATION AXES",
+    "axesTitle": "从5个维度进行确认",
+    "axesTotalPoints": "总分100分",
+    "axisPoints": "{{points}}分",
+    "axis1Title": "开发文档",
+    "axis1Description": "规格说明和决策依据是否整理成团队可用的形式",
+    "axis2Title": "开发流程",
+    "axis2Description": "从规划、评审到发布的流程是否有效运转",
+    "axis3Title": "质量保证",
+    "axis3Description": "是否具备可持续进行测试与质量确认的机制",
+    "axis4Title": "AI应用基础",
+    "axis4Description": "是否具备安全且可复现的AI应用条件",
+    "axis5Title": "项目特性",
+    "axis5Description": "项目对象与团队前提条件是否梳理清楚",
+    "infoScoreTitle": "得分解读方式",
+    "infoScoreBody": "按领域汇总回答内容，将团队的成熟度整理为不同阶段。",
+    "infoLimitTitle": "诊断的局限性",
+    "infoLimitBody": "诊断结果并非唯一正确答案，请结合实际情况进行判断。",
+    "infoDataTitle": "数据处理方式",
+    "infoDataBody": "回答与结果原则上仅保存在此浏览器内。",
+    "ctaTitle": "让团队的讨论，转化为下一步行动。",
+    "ctaBody": "建议在诊断结束后，一边查看结果，一边讨论“应从哪里开始完善”。",
+    "ctaButton": "开始诊断"
+  },
+  "share": {
+    "shareButton": "分享",
+    "shareXButton": "分享到X",
+    "preparingButton": "准备中…",
+    "copyUrlButton": "复制URL",
+    "copiedButton": "已复制",
+    "shareText": "我尝试了AI驱动开发导入诊断。\n\nAI驱动开发得分：{{score}}分\n预计开发工时削减率：{{reduction}}\n\n{{hashtags}}",
+    "shareXText": "我尝试了AI驱动开发导入诊断,得分{{score}}分,还发现开发工时最多可削减{{reduction}}🚀\n\n无需上传源代码,3分钟即可完成诊断。你的团队能得多少分?\n\n{{hashtags}}",
+    "shareXImageHint": "已复制图片。请粘贴到发布框中。",
+    "clipboardImageAndTextSuccess": "已复制发布文本和图片。请粘贴到发布框中并添加图片",
+    "clipboardImageFailure": "您使用的浏览器不支持复制图片，仅复制了发布文本",
+    "clipboardTextFailure": "无法复制发布文本",
+    "copyUrlSuccess": "已复制URL",
+    "copyUrlFailure": "无法复制URL",
+    "hashtags": "#AI驱动开发 #AI编程"
+  },
+  "levels": {
+    "1": {
+      "name": "Level 1：需要在AI导入前完善基础",
+      "summary": "请先从打好开发基础开始。可以将AI作为学习与整理的伙伴加以利用。",
+      "uses": [
+        "代码讲解",
+        "文档编写辅助",
+        "思路整理",
+        "学习支持"
+      ]
+    },
+    "2": {
+      "name": "Level 2：可进行有限的AI辅助",
+      "summary": "可以在风险较小的范围内活用AI辅助。",
+      "uses": [
+        "小规模代码生成",
+        "测试用例草案",
+        "代码评审辅助",
+        "现有代码讲解"
+      ]
+    },
+    "3": {
+      "name": "Level 3：可进行以人为主导的AI开发",
+      "summary": "在人工管理下，可将AI应用于实际业务任务。",
+      "uses": [
+        "以工单为单位的开发实现",
+        "测试代码生成",
+        "重构",
+        "设计评审",
+        "文档更新"
+      ]
+    },
+    "4": {
+      "name": "Level 4：适合开展AI驱动开发",
+      "summary": "借助评审与质量保证体系，可将广泛的开发任务交由AI处理。",
+      "uses": [
+        "AI功能实现",
+        "多文件变更",
+        "测试与评审的自动化",
+        "由AI代理执行任务"
+      ]
+    },
+    "5": {
+      "name": "Level 5：适合活用AI代理",
+      "summary": "已具备开展带质量门禁的持续性AI驱动开发的条件。",
+      "uses": [
+        "多代理协同运作",
+        "从需求到实现的半自动化",
+        "自动评审",
+        "自动测试",
+        "带质量门禁的持续性AI开发"
+      ]
+    }
+  },
+  "axisLabels": {
+    "document": "文档化与知识固化",
+    "process": "开发流程",
+    "qa": "质量保证",
+    "ai": "AI应用体制",
+    "project": "项目适配性"
+  },
+  "profileQuestions": {
+    "P1": {
+      "text": "请告知本次诊断所针对的开发团队规模",
+      "options": {
+        "solo": "个人开发（1人）",
+        "small": "2〜5人的团队",
+        "large": "6人以上的团队"
+      }
+    },
+    "P2": {
+      "text": "本次开发是否属于金融、医疗、公共等对法规和安全要求特别严格的领域",
+      "options": {
+        "yes": "是",
+        "no": "否",
+        "unknown": "不确定"
+      }
+    }
+  },
+  "questions": {
+    "Q01": {
+      "text": "本次开发对象属于哪种类型",
+      "strengthText": "已根据开发对象明确了AI应用的方向",
+      "options": {
+        "new_development": "新系统开发",
+        "existing_feature_addition": "在现有系统上新增功能",
+        "maintenance": "以维护、运维为主",
+        "legacy_renewal": "遗留系统改造升级",
+        "planning_phase": "开发前的规划、调研阶段"
+      }
+    },
+    "Q02": {
+      "text": "主要开发对象是什么",
+      "strengthText": "开发对象与AI辅助工具的适配度较高",
+      "options": {
+        "web": "Web应用",
+        "mobile": "移动端应用",
+        "business_system": "业务系统",
+        "api_backend": "API、后端服务",
+        "data_ml": "数据分析、机器学习",
+        "embedded": "嵌入式、控制系统",
+        "other": "其他"
+      }
+    },
+    "Q03": {
+      "text": "所使用的技术是否为目前仍被广泛采用的通用技术",
+      "strengthText": "采用了通用的技术栈",
+      "options": {
+        "sufficient": "完全符合",
+        "partial": "部分符合",
+        "not_implemented": "不符合",
+        "unknown": "不清楚"
+      }
+    },
+    "Q04": {
+      "text": "是否有多名成员理解系统规格",
+      "strengthText": "系统规格的理解已在多人之间共享",
+      "options": {
+        "multiple_people": "多人都能理解",
+        "partial_area": "仅部分领域有多人理解",
+        "single_person": "依赖特定负责人",
+        "unknown": "不清楚"
+      }
+    },
+    "Q05": {
+      "text": "项目的README及环境搭建步骤是否完善",
+      "strengthText": "README与环境搭建步骤已完善",
+      "description": "包括项目概述、启动方法、环境变量、开发流程、测试方法等",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q06": {
+      "text": "需求和规格说明是否整理保存在聊天记录或口头沟通以外的地方",
+      "strengthText": "需求与规格说明已统一整理",
+      "options": {
+        "organized": "已整理在Wiki、文档管理工具、工单系统等中",
+        "partial": "仅部分内容有整理",
+        "scattered": "主要分散在Excel、邮件、聊天记录中",
+        "rarely_exists": "几乎没有留存"
+      }
+    },
+    "Q07": {
+      "text": "重要的设计决策及技术选型理由是否以文档形式留存",
+      "strengthText": "设计决策与技术选型理由已文档化",
+      "description": "不限于ADR(Architecture Decision Record，架构决策记录)等特定格式，只要能事后追溯决策理由即可",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q08": {
+      "text": "是否有编码规范或命名规则",
+      "strengthText": "编码规范已明文规定",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q09": {
+      "text": "API规格或外部系统对接规格是否已整理",
+      "strengthText": "API及外部对接规格已整理完善",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q10": {
+      "text": "数据库设计及数据字段含义是否已文档化",
+      "strengthText": "数据库设计与数据定义已文档化",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q11": {
+      "text": "业务规则和异常处理逻辑是否已文档化",
+      "strengthText": "业务规则与异常处理已文档化",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q12": {
+      "text": "是否有可查阅以往故障、注意事项、已知问题的场所",
+      "strengthText": "以往故障与注意事项已沉淀为知识库",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q13": {
+      "text": "源代码是否使用Git进行管理",
+      "strengthText": "已普及使用Git进行版本管理",
+      "options": {
+        "all_git": "全部使用Git管理",
+        "partial_git": "仅部分使用Git管理",
+        "other_tools": "使用Git以外的工具或文件共享方式管理",
+        "unknown": "不清楚"
+      }
+    },
+    "Q14": {
+      "text": "Git提交信息是否有规范要求",
+      "strengthText": "提交信息规范已得到落实",
+      "description": "例如能明确变更目的、注明工单编号、变更粒度合理等",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q15": {
+      "text": "是否通过Pull Request或Merge Request进行代码审查",
+      "strengthText": "基于Pull Request的评审机制已得到落实",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q16": {
+      "text": "是否使用工单(Issue)管理工具",
+      "strengthText": "工单管理已融入开发流程",
+      "description": "如GitHub Issues、Jira、Backlog、Redmine、Azure DevOps、Linear等",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q17": {
+      "text": "工单中是否记载了目的、需求、完成标准",
+      "strengthText": "工单中已记载目的、需求与完成标准",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q18": {
+      "text": "开发任务是否能拆分为数小时到数天可完成的粒度",
+      "strengthText": "开发任务已拆分为合适的粒度",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q19": {
+      "text": "开发、评审、测试、发布的流程是否已明确定义",
+      "strengthText": "从开发到发布的流程已明确定义",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q20": {
+      "text": "是否具备CI/CD或自动构建机制",
+      "strengthText": "已建立CI/CD或自动构建体系",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q33": {
+      "text": "是否已养成小粒度频繁提交、出现问题时及时回滚(rollback/revert)的习惯",
+      "strengthText": "小粒度提交与回滚机制已得到落实",
+      "description": "例如以较小单位提交工作内容、出现问题时使用revert或恢复到之前状态等做法",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q21": {
+      "text": "是否有自动化测试",
+      "strengthText": "自动化测试体系已建立",
+      "options": {
+        "multiple_types": "具备单元测试、集成测试、E2E测试等多种类型",
+        "some": "有部分自动化测试",
+        "rarely_any": "几乎没有",
+        "unknown": "不清楚"
+      }
+    },
+    "Q22": {
+      "text": "变更后应确认的检查项是否明确",
+      "strengthText": "变更后的确认检查项已明确",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q23": {
+      "text": "是否有代码评审标准",
+      "strengthText": "代码评审标准已明文规定",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q24": {
+      "text": "是否自动执行静态分析、Lint、类型检查",
+      "strengthText": "静态分析、Lint、类型检查已实现自动化",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q25": {
+      "text": "上线生产环境前是否有人工审批环节",
+      "strengthText": "上线前的人工审批机制已得到落实",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q26": {
+      "text": "是否有机密信息、个人信息的处理规则",
+      "strengthText": "机密信息、个人信息的处理规则已完善",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q27": {
+      "text": "是否在开发工作中使用AI编码工具",
+      "strengthText": "已持续使用AI编码工具",
+      "options": {
+        "continuous_team_use": "团队持续使用中",
+        "partial_members": "部分成员在使用",
+        "trial_only": "仅处于试用阶段",
+        "not_used": "尚未使用"
+      }
+    },
+    "Q28": {
+      "text": "是否已明确定义可输入AI以及禁止输入AI的信息范围",
+      "strengthText": "AI输入信息的规则已明确定义",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q29": {
+      "text": "是否有规则要求由人工审查AI生成的代码",
+      "strengthText": "AI生成代码的人工审查已制度化",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q30": {
+      "text": "是否有供AI参考的指南或指令文件",
+      "strengthText": "供AI参考的指南、指令文件已完善",
+      "description": "如AGENTS.md、CLAUDE.md、Copilot instructions等",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q31": {
+      "text": "是否有衡量AI应用效果的指标",
+      "strengthText": "已建立衡量AI应用效果的指标体系",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q32": {
+      "text": "是否有AI引入的负责人或推进专员",
+      "strengthText": "AI引入的推进体制已建立",
+      "options": {
+        "sufficient": "已充分落实",
+        "partial": "部分落实",
+        "not_implemented": "未落实",
+        "unknown": "不清楚"
+      }
+    },
+    "Q34": {
+      "text": "AI工具是否已能安全地参照公司内部文档、代码库、知识库等内部数据",
+      "strengthText": "已建立AI可安全参照内部数据的环境",
+      "description": "指通过完善仓库内文档、进行工具对接等方式，在遵守机密信息处理规则的前提下，使AI能够参照相关内容",
+      "options": {
+        "sufficient": "可参照大部分所需的内部数据",
+        "partial": "可参照部分内部数据",
+        "not_implemented": "尚未达到可参照的状态",
+        "unknown": "不清楚"
+      }
+    }
+  },
+  "recommendations": {
+    "imp-Q01": {
+      "title": "制定与开发阶段相匹配的AI应用计划",
+      "description": "不同开发类型下AI应用的适用范围与风险差异很大。尤其在遗留系统改造或规划调研阶段，优先完善基础条件才是关键。",
+      "action": "明确当前所处的开发阶段，制定与该阶段相匹配的AI应用路线图。",
+      "expectedEffect": "可避免设定不切实际的预期，实现循序渐进、稳妥可靠的AI导入。"
+    },
+    "imp-Q02": {
+      "title": "把握开发对象领域的技术特性",
+      "description": "在嵌入式控制、数据分析与机器学习等AI编码辅助实践积累较少的领域，需要更加谨慎地推进导入。",
+      "action": "研究并考虑采用针对该领域特化的AI工具或提示词(Prompt)设计方案。",
+      "expectedEffect": "通过结合领域特性选择合适的工具，可避免出现不匹配的问题。"
+    },
+    "imp-Q03": {
+      "title": "考虑向通用技术栈迁移",
+      "description": "技术越是被广泛使用，AI能提供的支持精度就越高。而对于独有或小众技术，AI应用的效果会比较有限。",
+      "action": "作为长期的技术选型方针，考虑采用被广泛使用的通用技术栈。",
+      "expectedEffect": "可提升AI编码辅助建议的命中率与质量。"
+    },
+    "imp-Q04": {
+      "title": "消除规格理解的个人依赖",
+      "description": "如果规格理解仅依赖特定负责人，在应用AI时的评审与验证体系将难以有效运转。",
+      "action": "通过结对作业、编写文档等方式，将规格理解共享给多名成员。",
+      "expectedEffect": "可强化对AI生成内容的验证体系，提升实现环节的适用性。"
+    },
+    "imp-Q05": {
+      "title": "完善README与环境搭建步骤",
+      "description": "README不完善，无论对新成员还是对AI工具而言，都会成为理解开发上下文的重大障碍。",
+      "action": "在README中明确写出项目概述、环境搭建步骤、启动方法、测试方法，并定期核实其准确性。",
+      "expectedEffect": "AI编码工具将能够参照到正确的开发上下文信息。"
+    },
+    "imp-Q06": {
+      "title": "将聊天记录中的规格说明转移到正式文档",
+      "description": "规格说明散落在聊天记录、邮件中，或者几乎没有留存，这是直接制约综合评分上限的重大风险。",
+      "action": "将需求和规格说明集中整理到Wiki或文档管理工具中，并制定更新流程。",
+      "expectedEffect": "AI将能够参照规格说明进行实现，同时也能解除对综合评分上限的制约。"
+    },
+    "imp-Q07": {
+      "title": "引入ADR(设计决策记录)",
+      "description": "如果设计决策的背景没有留存记录，AI就难以基于既往决策给出具有一致性的建议。",
+      "action": "先准备好模板，从今后的重要设计决策开始进行记录。",
+      "expectedEffect": "AI能够理解设计意图，减少与既往决策相矛盾的建议。"
+    },
+    "imp-Q08": {
+      "title": "完善编码规范",
+      "description": "规范不完善会导致AI生成代码的风格不统一，从而增加评审成本。",
+      "action": "从现有代码中提炼规范，并整理成AI可参照的文档形式。",
+      "expectedEffect": "可提升AI生成代码的一致性，降低评审负担。"
+    },
+    "imp-Q09": {
+      "title": "将API规格与外部对接规格文档化",
+      "description": "API规格不完善会大幅提高AI生成错误接口代码的风险。",
+      "action": "以OpenAPI等格式整理API规格，并建立与实现同步更新的机制。",
+      "expectedEffect": "可降低涉及外部对接的实现中AI误生成的风险。"
+    },
+    "imp-Q10": {
+      "title": "将数据库设计与数据字段文档化",
+      "description": "数据模型文档不完善，会成为AI实现涉及数据一致性场景的障碍。",
+      "action": "整理ER图及数据字段定义，并制定变更时的更新规则。",
+      "expectedEffect": "可降低数据相关实现中AI误生成的风险。"
+    },
+    "imp-Q11": {
+      "title": "将业务规则与异常处理文档化",
+      "description": "作为隐性知识存在的业务规则AI无法掌握，这是导致重大规格遗漏的原因之一。",
+      "action": "将业务规则和异常处理场景以文档或测试用例的形式明确记录下来。",
+      "expectedEffect": "可减少在需求梳理与实现环节使用AI时的返工。"
+    },
+    "imp-Q12": {
+      "title": "将以往故障与已知问题沉淀为知识库",
+      "description": "如果没有以往的故障记录，就存在重复出现同类问题的风险，AI也无法参照。",
+      "action": "将故障报告和注意事项积累在可检索的场所。",
+      "expectedEffect": "可提升运维及故障应对环节应用AI的适用性。"
+    },
+    "imp-Q13": {
+      "title": "迁移到基于Git的版本管理",
+      "description": "未使用Git会使变更历史追溯与AI生成代码的差异评审变得极为困难，是直接制约综合评分上限的因素。",
+      "action": "将全部源代码迁移到Git仓库，并制定基本的分支管理规则。",
+      "expectedEffect": "可具备AI驱动开发的前提条件，并解除对综合评分上限的制约。"
+    },
+    "imp-Q14": {
+      "title": "引入提交信息(Commit Message)规范",
+      "description": "如果无法从提交历史中读取变更目的，无论是人还是AI都难以理解变更意图。",
+      "action": "引入包含变更目的、工单编号等信息的提交信息规范。",
+      "expectedEffect": "可提升变更历史的可读性，提高AI理解差异内容的精度。"
+    },
+    "imp-Q15": {
+      "title": "建立Pull Request评审体制",
+      "description": "缺少人工评审会导致失去验证AI生成代码的机会，是制约综合评分上限的因素之一。",
+      "action": "引入基于Pull Request / Merge Request的开发流程，并将评审设为必经环节。",
+      "expectedEffect": "可安全地采纳AI生成的代码，并解除对综合评分上限的制约。"
+    },
+    "imp-Q16": {
+      "title": "引入工单(Issue)管理工具",
+      "description": "缺少工单管理会导致任务粒度与进度不透明，是制约综合评分上限的因素之一。",
+      "action": "引入GitHub Issues、Jira等工单管理工具，并使其成为常态化运作方式。",
+      "expectedEffect": "可明确可委托给AI的任务单位，并解除对综合评分上限的制约。"
+    },
+    "imp-Q17": {
+      "title": "在工单中记载目的、需求与完成标准",
+      "description": "完成标准模糊会导致委托给AI的任务粒度难以确定，成果物的验收标准也不明确。",
+      "action": "在工单模板中将目的、需求、完成标准设为必填项目。",
+      "expectedEffect": "可提升委托任务给AI的精度，成为提升预估削减率的推动因素。"
+    },
+    "imp-Q18": {
+      "title": "将任务拆分为合适的粒度",
+      "description": "任务粒度过粗会导致对AI的指示变得模糊，从而增加生成代码的验证成本。",
+      "action": "彻底落实将任务拆分为数小时到数天内可完成单位的做法。",
+      "expectedEffect": "可交由AI Agent处理的任务将增多，评审负担随之减轻。"
+    },
+    "imp-Q19": {
+      "title": "将开发到发布的流程标准化",
+      "description": "如果流程依赖个人经验或未加明确定义，就无法构建纳入AI应用的标准化流程。",
+      "action": "编写从开发到发布的操作手册，并向团队进行宣讲说明。",
+      "expectedEffect": "可提高包含AI应用在内的整体开发流程的可复现性。"
+    },
+    "imp-Q20": {
+      "title": "构建CI/CD或自动构建体系",
+      "description": "自动构建、自动检查机制不完善，会导致AI生成代码的验证周期变长。",
+      "action": "构建将构建、测试、静态检查自动化的流水线(Pipeline)。",
+      "expectedEffect": "可高速且安全地验证AI生成的代码，成为提升预估削减率的推动因素。"
+    },
+    "imp-Q33": {
+      "title": "使小粒度提交与回滚机制成为常态",
+      "description": "应用AI时变更量容易增多，如果没有细粒度提交及可回退的运作方式，一旦出现问题就难以顺利撤回。",
+      "action": "在团队内推广以小粒度提交工作内容，并通过revert等方式安全回退的操作规范。",
+      "expectedEffect": "可安全地采纳AI带来的变更，并在出现问题时迅速恢复。"
+    },
+    "imp-Q21": {
+      "title": "完善自动化测试",
+      "description": "缺少自动化测试会使AI生成代码失去安全网，是重大风险之一。",
+      "action": "从重要功能开始逐步完善单元测试，并将其纳入CI流程。",
+      "expectedEffect": "可通过机制化手段保证AI生成代码的质量，同时解除对综合评分上限的制约。"
+    },
+    "imp-Q22": {
+      "title": "明确变更后的确认检查项",
+      "description": "如果确认检查项未明确定义，就无法验证变更(尤其是AI所做的变更)带来的影响。",
+      "action": "按变更类型分别整理确认检查清单。",
+      "expectedEffect": "可确保对AI生成代码的验证到位，同时解除对综合评分上限的制约。"
+    },
+    "imp-Q23": {
+      "title": "将代码评审标准明文化",
+      "description": "如果评审标准因人而异，质量判定就会出现波动，对AI生成代码的评价也难以保持一致。",
+      "action": "将安全性、可读性、性能等评审要点明文化，并制作成检查清单。",
+      "expectedEffect": "可提升代码评审环节应用AI的适用性。"
+    },
+    "imp-Q24": {
+      "title": "实现静态分析、Lint、类型检查的自动化",
+      "description": "如果没有自动检查机制，就无法以机制化方式保证AI生成代码的质量。",
+      "action": "将Lint、类型检查、静态分析工具纳入CI流程。",
+      "expectedEffect": "可自动检测出AI生成代码中的明显问题，减轻评审负担。"
+    },
+    "imp-Q25": {
+      "title": "建立上线生产环境前的人工审批流程",
+      "description": "缺少人工审批环节，会损害应用AI时的安全性，是制约综合评分上限的因素之一。",
+      "action": "构建在上线生产环境前必定设置人工审批环节的流程。",
+      "expectedEffect": "即使应用AI也能安全发布，可解除对综合评分上限的制约。"
+    },
+    "imp-Q26": {
+      "title": "完善机密信息、个人信息的处理规则",
+      "description": "处理规则不完善，会在使用AI工具时提高信息泄露的风险。",
+      "action": "制定机密信息、个人信息的分类标准及处理规则，并向全员宣讲。",
+      "expectedEffect": "可降低信息泄露风险，为完善AI输入规则打下基础。"
+    },
+    "imp-Q27": {
+      "title": "扩大AI编码工具的应用范围",
+      "description": "如果AI应用仍处于未实施或试用阶段，效果评估与体制建设就难以推进。",
+      "action": "开展小规模试点(Pilot)导入，并记录其效果与存在的问题。",
+      "expectedEffect": "可积累AI应用的实践数据，为全面推广提供决策依据。"
+    },
+    "imp-Q28": {
+      "title": "明确定义禁止输入AI的信息范围",
+      "description": "如果没有明确哪些信息可以输入AI、哪些禁止输入的规则，机密信息泄露的风险会很高，是制约综合评分上限的因素之一。",
+      "action": "按机密级别制定AI工具的输入许可标准，并结合工具设置加以落实。",
+      "expectedEffect": "可实现对AI的安全使用，并解除对综合评分上限的制约。"
+    },
+    "imp-Q29": {
+      "title": "制定AI生成代码的评审规则",
+      "description": "如果未针对AI生成代码特有的关注点(如错误前提、许可证问题等)加以完善，质量风险将依然存在。",
+      "action": "制定专门针对AI生成代码的评审检查清单。",
+      "expectedEffect": "可建立起能够放心采纳AI生成代码的体制。"
+    },
+    "imp-Q30": {
+      "title": "完善供AI参考的指南与指令文件",
+      "description": "如果没有面向AI工具的指令文件，就难以确保AI生成内容的一致性。",
+      "action": "将编码规范、设计方针整理成AGENTS.md、CLAUDE.md等供AI参考的文件。",
+      "expectedEffect": "可提升AI生成代码的一致性与精度。"
+    },
+    "imp-Q31": {
+      "title": "引入衡量AI应用效果的指标",
+      "description": "如果没有效果指标，就无法说明投资回报，从而延误扩大AI应用的决策。",
+      "action": "定义实现耗时、评审耗时、缺陷数量等KPI，并持续进行测量。",
+      "expectedEffect": "可为AI导入的决策提供依据，实现持续改进。"
+    },
+    "imp-Q32": {
+      "title": "确定AI导入的推进专员",
+      "description": "如果没有推进专员，AI应用相关规则的完善与推广就会变得随意、缺乏系统性。",
+      "action": "任命AI导入的负责人或推进专员，建立指南更新与工具选型的责任体制。",
+      "expectedEffect": "可使AI应用在组织层面得以持续推进和扩大。"
+    },
+    "imp-Q34": {
+      "title": "建立AI可参照内部数据的环境",
+      "description": "如果AI工具无法参照规格说明书、代码库、知识库等内容，就会因上下文信息不足而导致生成质量遇到瓶颈。",
+      "action": "在遵守机密信息处理规则的前提下，通过完善仓库内文档、进行工具对接等方式，建立AI可参照内部数据的环境。",
+      "expectedEffect": "可提升AI输出内容的准确性与一致性，减少返工。"
+    }
+  }
+}
