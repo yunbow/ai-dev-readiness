@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yunbow.github.io/ai-dev-readiness/sitemap.xml
