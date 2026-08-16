@@ -1,0 +1,20 @@
+# AI coding assistant local configuration and workspace data
+.claude/
+.claude.json
+.claude-*/
+.codex/
+.cursor/
+.cursorignore
+.aider*
+.continue/
+.windsurf/
+.roo/
+.opencode/
+.cline/
+.kilocode/
+.github/copilot-instructions.md
+
+# Local environment files
+.env
+.env.*
+!.env.example
